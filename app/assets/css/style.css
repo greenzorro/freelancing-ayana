@@ -17,15 +17,7 @@ body {
   background: #fff; }
 
 a {
-  color: #FC8222;
-  -webkit-transition: color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95), background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
-  transition: color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95), background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95); }
-  a:active {
-    color: #FC8222; }
-  a:visited {
-    color: #FC8222; }
-  a:hover {
-    color: #fdad6d; }
+  color: #FC8222; }
 
 input, textarea, button {
   font-family: -apple-system,Helvetica,Arial,"PingFang SC","Source Han Sans SC","Microsoft YaHei","WenQuanYi MicroHei",sans-serif; }
@@ -129,11 +121,9 @@ h2.title {
           background: #FC8222;
           border-radius: 6px;
           text-align: center;
-          color: #fff; }
-          .intro .content .text .links a:active {
-            background: #FC8222; }
-          .intro .content .text .links a:visited {
-            background: #FC8222; }
+          color: #fff;
+          -webkit-transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
+          transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95); }
           .intro .content .text .links a:hover {
             background: #fdad6d; } }
 @media only screen and (max-width: 767px) {
@@ -273,6 +263,11 @@ h2.title {
   .apply .links li {
     -webkit-flex: 0 1 auto;
     flex: 0 1 auto; }
+    .apply .links li a {
+      -webkit-transition: color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
+      transition: color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95); }
+      .apply .links li a:hover {
+        color: #fdad6d; }
 .apply .dashline {
   display: -webkit-flex;
   display: flex;
@@ -415,7 +410,11 @@ h2.title {
       border: 1px solid #fff;
       border-radius: 6px;
       color: #fff;
-      text-align: center; }
+      text-align: center;
+      -webkit-transition: background 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
+      transition: background 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95); }
+      .buttons div a:hover {
+        background: rgba(255, 255, 255, 0.15); }
 
 @media only screen and (max-width: 767px) {
   .buttons div {
@@ -470,7 +469,11 @@ h2.title {
         border-radius: 6px;
         text-align: center;
         color: #fff;
-        font-size: 0.16rem; } }
+        font-size: 0.16rem;
+        -webkit-transition: background 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
+        transition: background 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95); }
+        .more_info .bg_wrap a:hover {
+          background: rgba(255, 255, 255, 0.15); } }
 .footer {
   padding: 0.2rem 0;
   text-align: center; }

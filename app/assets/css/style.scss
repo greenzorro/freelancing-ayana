@@ -29,9 +29,6 @@ $pc-min: 768px;
 @mixin transition ($value) {
 	-webkit-transition: $value;
 	transition: $value;}
-@mixin transition-2-var ($value1,$value2) {
-	-webkit-transition: $value1, $value2;
-	transition: $value1, $value2;}
 @mixin transition-transform ($value1,$value2) {
 	-webkit-transition: -webkit-transform $value1 $value2;
 	transition: transform $value1 $value2;}
@@ -62,30 +59,6 @@ $pc-min: 768px;
 @mixin align-content ($value) {
 	-webkit-align-content: $value;
 	align-content: $value;}
-@mixin aColor ($value) {
-	color: $value;
-	&:active {
-		color: $value;
-	}
-	&:visited {
-		color: $value;
-	}
-	&:hover {
-		color: lighten($value,15%);
-	}
-}
-@mixin aBgColor ($value) {
-	background: $value;
-	&:active {
-		background: $value;
-	}
-	&:visited {
-		background: $value;
-	}
-	&:hover {
-		background: lighten($value,15%);
-	}
-}
 
 
 
@@ -108,8 +81,7 @@ body {
 	color: $black;
 	background: $white;}
 a {
-	@include aColor ($primary);
-	@include transition-2-var (color 0.5s $easing, background-color 0.5s $easing);
+	color: $primary;
 }
 input, textarea, button {
 	font-family: -apple-system,Helvetica,Arial,"PingFang SC","Source Han Sans SC","Microsoft YaHei","WenQuanYi MicroHei",sans-serif;}
@@ -257,10 +229,14 @@ h2.title {
 						height: 0.36rem;
 						line-height: 0.36rem;
 						margin: 0 0.15rem 0.1rem 0;
-						@include aBgColor ($primary);
+						background: $primary;
 						border-radius: 6px;
 						text-align: center;
 						color: $white;
+						@include transition (background-color 0.5s $easing);
+						&:hover {
+							background: lighten($primary, 15%);
+						}
 					}
 				}
 			}
@@ -471,6 +447,12 @@ h2.title {
 		@include flex-flow (row wrap);
 		li {
 			@include flex (0 1 auto);
+			a {
+				@include transition (color 0.5s $easing);
+				&:hover {
+					color: lighten($primary, 15%);
+				}
+			}
 		}
 	}
 	.dashline {
@@ -654,6 +636,10 @@ h2.title {
 			border-radius: 6px;
 			color: $white;
 			text-align: center;
+			@include transition (background 0.5s $easing);
+			&:hover {
+				background: rgba(255,255,255,0.15);
+			}
 		}
 	}
 }
@@ -730,6 +716,10 @@ h2.title {
 				text-align: center;
 				color: $white;
 				font-size: 0.16rem;
+				@include transition (background 0.5s $easing);
+				&:hover {
+					background: rgba(255,255,255,0.15);
+				}
 			}
 		}
 	}
