@@ -233,7 +233,9 @@ h2.title {
 				position: relative;
 				input {
 					width: calc(100% - 0.3rem);
-					padding: 0.08rem 0.15rem;
+					height: 0.2rem;
+					line-height: 0.2rem;
+					padding: 0.06rem 0.15rem;
 					font-size: 0.14rem;
 					color: $black;
 					position: relative;
@@ -241,7 +243,9 @@ h2.title {
 				}
 				select {
 					width: calc(100% - 0.3rem);
-					padding: 0.07rem 0.15rem;
+					height: 0.19rem;
+					line-height: 0.19rem;
+					padding: 0.06rem 0.15rem;
 					border: 0;
 					background: transparent;
 					appearance:none;
