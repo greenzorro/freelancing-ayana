@@ -352,7 +352,12 @@ h2.title {
 					font-size: 0.24rem;
 				}
 				.row {
-					padding: 0.05rem 0;
+					input {
+						padding: 0.11rem 0.15rem;
+					}
+					select {
+						padding: 0.11rem 0.15rem;
+					}
 					.placeholder {
 						top: 0.1rem;
 					}

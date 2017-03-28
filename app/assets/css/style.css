@@ -202,10 +202,12 @@ h2.title {
         .sign_up .bg_wrap .form h2 {
           margin: 0.3rem 0;
           font-size: 0.24rem; }
-        .sign_up .bg_wrap .form .row {
-          padding: 0.05rem 0; }
-          .sign_up .bg_wrap .form .row .placeholder {
-            top: 0.1rem; }
+        .sign_up .bg_wrap .form .row input {
+          padding: 0.11rem 0.15rem; }
+        .sign_up .bg_wrap .form .row select {
+          padding: 0.11rem 0.15rem; }
+        .sign_up .bg_wrap .form .row .placeholder {
+          top: 0.1rem; }
         .sign_up .bg_wrap .form .submit {
           -webkit-transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
           transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
