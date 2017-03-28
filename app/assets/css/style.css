@@ -17,7 +17,8 @@ body {
   background: #fff; }
 
 a {
-  color: #FC8222; }
+  color: #FC8222;
+  -webkit-tap-highlight-color: transparent; }
 
 input, textarea, button {
   font-family: -apple-system,Helvetica,Arial,"PingFang SC","Source Han Sans SC","Microsoft YaHei","WenQuanYi MicroHei",sans-serif; }
