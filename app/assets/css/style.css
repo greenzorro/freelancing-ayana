@@ -141,16 +141,7 @@ h2.title {
         border-radius: 0.04rem;
         font-size: 0.16rem;
         color: #fff;
-        text-align: center;
-        -webkit-transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
-        transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
-        background-color: #FC8222; }
-        .sign_up .bg_wrap .form .submit:visited {
-          background-color: #FC8222; }
-        .sign_up .bg_wrap .form .submit:hover {
-          background-color: #fdad6d; }
-        .sign_up .bg_wrap .form .submit:active {
-          background-color: #FC8222; }
+        text-align: center; }
 
 @media only screen and (max-width: 767px) {
   .sign_up {
@@ -210,7 +201,17 @@ h2.title {
         .sign_up .bg_wrap .form .row {
           padding: 0.05rem 0.15rem; }
           .sign_up .bg_wrap .form .row .placeholder {
-            top: 0.1rem; } }
+            top: 0.1rem; }
+        .sign_up .bg_wrap .form .submit {
+          -webkit-transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
+          transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
+          background-color: #FC8222; }
+          .sign_up .bg_wrap .form .submit:visited {
+            background-color: #FC8222; }
+          .sign_up .bg_wrap .form .submit:hover {
+            background-color: #fdad6d; }
+          .sign_up .bg_wrap .form .submit:active {
+            background-color: #FC8222; } }
 @media only screen and (max-width: 767px) {
   .intro {
     display: none; } }
@@ -420,16 +421,6 @@ h2.title {
   .apply .links li {
     -webkit-flex: 0 1 auto;
     flex: 0 1 auto; }
-    .apply .links li a {
-      -webkit-transition: color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
-      transition: color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
-      color: #FC8222; }
-      .apply .links li a:visited {
-        color: #FC8222; }
-      .apply .links li a:hover {
-        color: #fdad6d; }
-      .apply .links li a:active {
-        color: #FC8222; }
 .apply .dashline {
   display: -webkit-flex;
   display: flex;
@@ -535,6 +526,16 @@ h2.title {
     .apply .links li {
       margin: 0.7rem 0.35rem 1rem;
       font-size: 0.24rem; }
+      .apply .links li a {
+        -webkit-transition: color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
+        transition: color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
+        color: #FC8222; }
+        .apply .links li a:visited {
+          color: #FC8222; }
+        .apply .links li a:hover {
+          color: #fdad6d; }
+        .apply .links li a:active {
+          color: #FC8222; }
     .apply .dashline {
       -webkit-transform: translate(0, 0.22rem);
       transform: translate(0, 0.22rem); }
@@ -572,16 +573,7 @@ h2.title {
       border: 1px solid #fff;
       border-radius: 0.06rem;
       color: #fff;
-      text-align: center;
-      -webkit-transition: background 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
-      transition: background 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
-      background-color: #FC8222; }
-      .buttons div a:visited {
-        background-color: #FC8222; }
-      .buttons div a:hover {
-        background-color: #fdad6d; }
-      .buttons div a:active {
-        background-color: #FC8222; }
+      text-align: center; }
 
 @media only screen and (max-width: 767px) {
   .buttons div {
@@ -604,7 +596,16 @@ h2.title {
       height: 0.48rem;
       line-height: 0.48rem;
       margin: 0.2rem;
-      font-size: 0.16rem; } }
+      font-size: 0.16rem;
+      -webkit-transition: background 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
+      transition: background 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
+      background-color: #FC8222; }
+      .buttons div a:visited {
+        background-color: #FC8222; }
+      .buttons div a:hover {
+        background-color: #fdad6d; }
+      .buttons div a:active {
+        background-color: #FC8222; } }
 @media only screen and (max-width: 767px) {
   .more_info {
     display: none; } }

@@ -271,8 +271,6 @@ h2.title {
 				font-size: 0.16rem;
 				color: $white;
 				text-align: center;
-				@include transition (background-color 0.5s $easing);
-				@include aBgColor ($primary);
 			}
 		}
 	}
@@ -354,6 +352,10 @@ h2.title {
 					.placeholder {
 						top: 0.1rem;
 					}
+				}
+				.submit {
+					@include transition (background-color 0.5s $easing);
+					@include aBgColor ($primary);
 				}
 			}
 		}
@@ -636,10 +638,6 @@ h2.title {
 		@include flex-flow (row wrap);
 		li {
 			@include flex (0 1 auto);
-			a {
-				@include transition (color 0.5s $easing);
-				@include aColor ($primary);
-			}
 		}
 	}
 	.dashline {
@@ -768,6 +766,10 @@ h2.title {
 			li {
 				margin: 0.7rem 0.35rem 1rem;
 				font-size: 0.24rem;
+				a {
+					@include transition (color 0.5s $easing);
+					@include aColor ($primary);
+				}
 			}
 		}
 		.dashline {
@@ -823,8 +825,6 @@ h2.title {
 			border-radius: 0.06rem;
 			color: $white;
 			text-align: center;
-			@include transition (background 0.5s $easing);
-			@include aBgColor ($primary);
 		}
 	}
 }
@@ -851,6 +851,8 @@ h2.title {
 			line-height: 0.48rem;
 			margin: 0.2rem;
 			font-size: 0.16rem;
+			@include transition (background 0.5s $easing);
+			@include aBgColor ($primary);
 		}
 	}
 }
