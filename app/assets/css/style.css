@@ -103,20 +103,19 @@ h2.title {
         color: #002A5B; }
       .sign_up .bg_wrap .form .row {
         margin: 0.12rem 0.2rem;
-        padding: 0 0.15rem;
         border: 1px solid #ccc;
         border-radius: 0.04rem;
         position: relative; }
         .sign_up .bg_wrap .form .row input {
-          width: 100%;
-          padding: 0.08rem 0;
+          width: calc(100% - 0.3rem);
+          padding: 0.08rem 0.15rem;
           font-size: 0.14rem;
           color: #333;
           position: relative;
           z-index: 2; }
         .sign_up .bg_wrap .form .row select {
-          width: 100%;
-          padding: 0.07rem 0;
+          width: calc(100% - 0.3rem);
+          padding: 0.07rem 0.15rem;
           border: 0;
           background: transparent;
           appearance: none;
@@ -200,7 +199,7 @@ h2.title {
           margin: 0.3rem 0;
           font-size: 0.24rem; }
         .sign_up .bg_wrap .form .row {
-          padding: 0.05rem 0.15rem; }
+          padding: 0.05rem 0; }
           .sign_up .bg_wrap .form .row .placeholder {
             top: 0.1rem; }
         .sign_up .bg_wrap .form .submit {
