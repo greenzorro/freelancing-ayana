@@ -852,7 +852,7 @@ h2.title {
 			line-height: 0.48rem;
 			margin: 0.2rem;
 			font-size: 0.16rem;
-			@include transition (background 0.5s $easing);
+			@include transition (background-color 0.5s $easing);
 			@include aBgColor ($primary);
 		}
 	}
@@ -904,9 +904,9 @@ h2.title {
 				text-align: center;
 				color: $white;
 				font-size: 0.16rem;
-				@include transition (background 0.5s $easing);
+				@include transition (background-color 0.5s $easing);
 				&:hover {
-					background: rgba(255,255,255,0.3);
+					background-color: rgba(255,255,255,0.3);
 				}
 			}
 		}

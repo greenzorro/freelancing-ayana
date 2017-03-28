@@ -598,8 +598,8 @@ h2.title {
       line-height: 0.48rem;
       margin: 0.2rem;
       font-size: 0.16rem;
-      -webkit-transition: background 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
-      transition: background 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
+      -webkit-transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
+      transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
       background-color: #FC8222; }
       .buttons div a:visited {
         background-color: #FC8222; }
@@ -639,10 +639,10 @@ h2.title {
         text-align: center;
         color: #fff;
         font-size: 0.16rem;
-        -webkit-transition: background 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
-        transition: background 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95); }
+        -webkit-transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
+        transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95); }
         .more_info .bg_wrap a:hover {
-          background: rgba(255, 255, 255, 0.3); } }
+          background-color: rgba(255, 255, 255, 0.3); } }
 .footer {
   padding: 0.2rem 0;
   text-align: center; }
