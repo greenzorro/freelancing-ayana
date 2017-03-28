@@ -929,6 +929,7 @@ h2.title {
 			font-size: 0.14rem;
 		}
 		a {
+			@include transition (color 0.5s $easing);
 			@include aColor ($primary);
 		}
 		i {
