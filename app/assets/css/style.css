@@ -17,8 +17,7 @@ body {
   background: #fff; }
 
 a {
-  color: #FC8222;
-  -webkit-tap-highlight-color: transparent; }
+  color: #FC8222; }
 
 input, textarea, button {
   font-family: -apple-system,Helvetica,Arial,"PingFang SC","Source Han Sans SC","Microsoft YaHei","WenQuanYi MicroHei",sans-serif; }
@@ -151,7 +150,7 @@ h2.title {
         .sign_up .bg_wrap .form .submit:hover {
           background-color: #fdad6d; }
         .sign_up .bg_wrap .form .submit:active {
-          background-color: #fdad6d; }
+          background-color: #FC8222; }
 
 @media only screen and (max-width: 767px) {
   .sign_up {
@@ -283,7 +282,7 @@ h2.title {
             .intro .content .text .links a:hover {
               background-color: #fdad6d; }
             .intro .content .text .links a:active {
-              background-color: #fdad6d; } }
+              background-color: #FC8222; } }
 @media only screen and (max-width: 767px) {
   .courses {
     display: none; } }
@@ -430,7 +429,7 @@ h2.title {
       .apply .links li a:hover {
         color: #fdad6d; }
       .apply .links li a:active {
-        color: #fdad6d; }
+        color: #FC8222; }
 .apply .dashline {
   display: -webkit-flex;
   display: flex;
@@ -582,7 +581,7 @@ h2.title {
       .buttons div a:hover {
         background-color: #fdad6d; }
       .buttons div a:active {
-        background-color: #fdad6d; }
+        background-color: #FC8222; }
 
 @media only screen and (max-width: 767px) {
   .buttons div {
@@ -656,7 +655,7 @@ h2.title {
       .footer p a:hover {
         color: #fdad6d; }
       .footer p a:active {
-        color: #fdad6d; }
+        color: #FC8222; }
     .footer p i {
       padding: 0 0.1rem;
       color: #ccc; }
