@@ -162,11 +162,183 @@ h2.title {
 //                               sign_up                               //
 //*********************************************************************//
 
+.sign_up {
+	background-color: $accent;
+	background-image: url(../images/school1_sign_up.jpg);
+	background-repeat: no-repeat;
+	.bg_wrap {
+		background-color: $accent2;
+		.instruction {
+			color: $white;
+			h1 {
+				font-weight: bold;
+				&:after {
+					content: "";
+					display: block;
+					width: 0.34rem;
+					height: 0.02rem;
+					background: $white;
+				}
+			}
+			span {
+				display: block;
+			}
+		}
+		.form {
+			overflow: hidden;
+			background: $white;
+			border-radius: 0.04rem;
+			.stripe {
+				@include display-flex ();
+				@include justify-content (center);
+				@include flex-flow (row wrap);
+				i {
+					@include flex (1 1 25%);
+					display: block;
+					height: 0.05rem;
+					&:nth-child(even) {
+						background-color: $primary;
+					}
+					&:nth-child(odd) {
+						background-color: $accent;
+					}
+				}
+			}
+			h2 {
+				text-align: center;
+				color: $accent;
+			}
+			.row {
+				margin: 0.12rem 0.2rem;
+				padding: 0 0.15rem;
+				border: 1px solid $gray_dark;
+				border-radius: 0.04rem;
+				position: relative;
+				input {
+					width: 100%;
+					padding: 0.08rem 0;
+					font-size: 0.14rem;
+					color: $black;
+					position: relative;
+					z-index: 2;
+				}
+				select {
+					width: 100%;
+					padding: 0.07rem 0;
+					border: 0;
+					background: transparent;
+					appearance:none;
+					-moz-appearance:none;
+					-webkit-appearance:none;
+					font-size: 0.14rem;
+					color: $black;
+					position: relative;
+					z-index: 2;
+				}
+				.placeholder {
+					font-size: 0.14rem;
+					color: $gray_dark;
+					position: absolute;
+					left: 0.15rem;
+					z-index: 1;
+				}
+			}
+			.submit {
+				display: block;
+				width: 2.1rem;
+				height: 0.4rem;
+				line-height: 0.4rem;
+				margin: 0.25rem auto;
+				background: $primary;
+				border-radius: 0.04rem;
+				font-size: 0.16rem;
+				color: $white;
+				text-align: center;
+			}
+		}
+	}
+}
 // phone
 @media only screen and (max-width: $phone-max){
+	.sign_up {
+		background-position: center top;
+		background-size: 300%;
+		.bg_wrap {
+			padding: 0.4rem 0.2rem;
+			.instruction {
+				margin: 0 0 0.4rem;
+				h1 {
+					font-size: 0.24rem;
+					&:after {
+						margin: 0.1rem 0 0;
+					}
+				}
+				p {
+					margin: 0.3rem 0 0.1rem;
+					font-size: 0.12rem;
+				}
+				span {
+					font-size: 0.12rem;
+				}
+			}
+			.form {
+				h2 {
+					margin: 0.2rem 0;
+					font-size: 0.16rem;
+				}
+				.row {
+					.placeholder {
+						top: 0.05rem;
+					}
+				}
+			}
+		}
+	}
 }
 // pc
 @media only screen and (min-width: $pc-min){
+	.sign_up {
+		background-position: center center;
+		background-size: cover;
+		.bg_wrap {
+			@include display-flex ();
+			@include justify-content (space-around);
+			@include flex-flow (row wrap);
+			padding: 0.4rem 10%;
+			.instruction {
+				@include flex (0 1 50%);
+				margin: 5% 0 0;
+				h1 {
+					font-size: 0.48rem;
+					&:after {
+						margin: 0.2rem 0 0;
+					}
+				}
+				p {
+					margin: 0.4rem 0 0.6rem;
+					font-size: 0.24rem;
+					font-weight: bold;
+				}
+				span {
+					font-size: 0.2rem;
+				}
+			}
+			.form {
+				@include flex (0 1 45%);
+				max-width: 3.8rem;
+				h2 {
+					margin: 0.3rem 0;
+					font-size: 0.24rem;
+				}
+				.row {
+					padding: 0.05rem 0.15rem;
+					.placeholder {
+						top: 0.1rem;
+					}
+				}
+			}
+		}
+	}
 }
 
 
@@ -185,6 +357,7 @@ h2.title {
 // pc
 @media only screen and (min-width: $pc-min){
 	.intro {
+		padding: 1rem 0 0;
 		.content {
 			@include display-flex ();
 			@include justify-content (center);
@@ -449,9 +622,6 @@ h2.title {
 			@include flex (0 1 auto);
 			a {
 				@include transition (color 0.5s $easing);
-				&:hover {
-					color: lighten($primary, 15%);
-				}
 			}
 		}
 	}
@@ -538,6 +708,11 @@ h2.title {
 			li {
 				margin: 0.3rem 0.07rem 0.5rem;
 				font-size: 0.14rem;
+				a {
+					&:active {
+						color: lighten($primary, 15%);
+					}
+				}
 			}
 		}
 		.dashline {
@@ -581,6 +756,11 @@ h2.title {
 			li {
 				margin: 0.7rem 0.35rem 1rem;
 				font-size: 0.24rem;
+				a {
+					&:hover {
+						color: lighten($primary, 15%);
+					}
+				}
 			}
 		}
 		.dashline {
@@ -633,13 +813,10 @@ h2.title {
 		a {
 			display: block;
 			border: 1px solid $white;
-			border-radius: 6px;
+			border-radius: 0.06rem;
 			color: $white;
 			text-align: center;
 			@include transition (background 0.5s $easing);
-			&:hover {
-				background: rgba(255,255,255,0.15);
-			}
 		}
 	}
 }
@@ -653,6 +830,9 @@ h2.title {
 			line-height: 0.4rem;
 			margin: 0.12rem;
 			font-size: 0.14rem;
+			&:active {
+				background: rgba(255,255,255,0.15);
+			}
 		}
 	}
 }
@@ -666,6 +846,9 @@ h2.title {
 			line-height: 0.48rem;
 			margin: 0.2rem;
 			font-size: 0.16rem;
+			&:hover {
+				background: rgba(255,255,255,0.15);
+			}
 		}
 	}
 }
@@ -712,7 +895,7 @@ h2.title {
 				line-height: 0.36rem;
 				margin: 0 auto;
 				border: 1px solid $white;
-				border-radius: 6px;
+				border-radius: 0.06rem;
 				text-align: center;
 				color: $white;
 				font-size: 0.16rem;

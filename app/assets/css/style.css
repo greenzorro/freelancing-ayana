@@ -60,72 +60,217 @@ h2.title {
   .header {
     height: calc(0.72rem - 0.15rem);
     padding: 0.15rem 1rem; } }
+.sign_up {
+  background-color: #002A5B;
+  background-image: url(../images/school1_sign_up.jpg);
+  background-repeat: no-repeat; }
+  .sign_up .bg_wrap {
+    background-color: rgba(0, 42, 91, 0.7); }
+    .sign_up .bg_wrap .instruction {
+      color: #fff; }
+      .sign_up .bg_wrap .instruction h1 {
+        font-weight: bold; }
+        .sign_up .bg_wrap .instruction h1:after {
+          content: "";
+          display: block;
+          width: 0.34rem;
+          height: 0.02rem;
+          background: #fff; }
+      .sign_up .bg_wrap .instruction span {
+        display: block; }
+    .sign_up .bg_wrap .form {
+      overflow: hidden;
+      background: #fff;
+      border-radius: 0.04rem; }
+      .sign_up .bg_wrap .form .stripe {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap; }
+        .sign_up .bg_wrap .form .stripe i {
+          -webkit-flex: 1 1 25%;
+          flex: 1 1 25%;
+          display: block;
+          height: 0.05rem; }
+          .sign_up .bg_wrap .form .stripe i:nth-child(even) {
+            background-color: #FC8222; }
+          .sign_up .bg_wrap .form .stripe i:nth-child(odd) {
+            background-color: #002A5B; }
+      .sign_up .bg_wrap .form h2 {
+        text-align: center;
+        color: #002A5B; }
+      .sign_up .bg_wrap .form .row {
+        margin: 0.12rem 0.2rem;
+        padding: 0 0.15rem;
+        border: 1px solid #ccc;
+        border-radius: 0.04rem;
+        position: relative; }
+        .sign_up .bg_wrap .form .row input {
+          width: 100%;
+          padding: 0.08rem 0;
+          font-size: 0.14rem;
+          color: #333;
+          position: relative;
+          z-index: 2; }
+        .sign_up .bg_wrap .form .row select {
+          width: 100%;
+          padding: 0.07rem 0;
+          border: 0;
+          background: transparent;
+          appearance: none;
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          font-size: 0.14rem;
+          color: #333;
+          position: relative;
+          z-index: 2; }
+        .sign_up .bg_wrap .form .row .placeholder {
+          font-size: 0.14rem;
+          color: #ccc;
+          position: absolute;
+          left: 0.15rem;
+          z-index: 1; }
+      .sign_up .bg_wrap .form .submit {
+        display: block;
+        width: 2.1rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        margin: 0.25rem auto;
+        background: #FC8222;
+        border-radius: 0.04rem;
+        font-size: 0.16rem;
+        color: #fff;
+        text-align: center; }
+
+@media only screen and (max-width: 767px) {
+  .sign_up {
+    background-position: center top;
+    background-size: 300%; }
+    .sign_up .bg_wrap {
+      padding: 0.4rem 0.2rem; }
+      .sign_up .bg_wrap .instruction {
+        margin: 0 0 0.4rem; }
+        .sign_up .bg_wrap .instruction h1 {
+          font-size: 0.24rem; }
+          .sign_up .bg_wrap .instruction h1:after {
+            margin: 0.1rem 0 0; }
+        .sign_up .bg_wrap .instruction p {
+          margin: 0.3rem 0 0.1rem;
+          font-size: 0.12rem; }
+        .sign_up .bg_wrap .instruction span {
+          font-size: 0.12rem; }
+      .sign_up .bg_wrap .form h2 {
+        margin: 0.2rem 0;
+        font-size: 0.16rem; }
+      .sign_up .bg_wrap .form .row .placeholder {
+        top: 0.05rem; } }
+@media only screen and (min-width: 768px) {
+  .sign_up {
+    background-position: center center;
+    background-size: cover; }
+    .sign_up .bg_wrap {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-around;
+      justify-content: space-around;
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
+      padding: 0.4rem 10%; }
+      .sign_up .bg_wrap .instruction {
+        -webkit-flex: 0 1 50%;
+        flex: 0 1 50%;
+        margin: 5% 0 0; }
+        .sign_up .bg_wrap .instruction h1 {
+          font-size: 0.48rem; }
+          .sign_up .bg_wrap .instruction h1:after {
+            margin: 0.2rem 0 0; }
+        .sign_up .bg_wrap .instruction p {
+          margin: 0.4rem 0 0.6rem;
+          font-size: 0.24rem;
+          font-weight: bold; }
+        .sign_up .bg_wrap .instruction span {
+          font-size: 0.2rem; }
+      .sign_up .bg_wrap .form {
+        -webkit-flex: 0 1 45%;
+        flex: 0 1 45%;
+        max-width: 3.8rem; }
+        .sign_up .bg_wrap .form h2 {
+          margin: 0.3rem 0;
+          font-size: 0.24rem; }
+        .sign_up .bg_wrap .form .row {
+          padding: 0.05rem 0.15rem; }
+          .sign_up .bg_wrap .form .row .placeholder {
+            top: 0.1rem; } }
 @media only screen and (max-width: 767px) {
   .intro {
     display: none; } }
 @media only screen and (min-width: 768px) {
-  .intro .content {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
-    margin: 0.7rem 0 0; }
-    .intro .content li {
-      -webkit-flex: 1 1 50%;
-      flex: 1 1 50%;
-      height: 4.4rem; }
-    .intro .content .img {
-      background-size: cover; }
-    .intro .content .text {
+  .intro {
+    padding: 1rem 0 0; }
+    .intro .content {
       display: -webkit-flex;
       display: flex;
       -webkit-justify-content: center;
       justify-content: center;
-      -webkit-flex-flow: column wrap;
-      flex-flow: column wrap; }
-      .intro .content .text h3 {
-        -webkit-flex: 0 1 auto;
-        flex: 0 1 auto;
-        width: 75%;
-        margin: 0 auto 0.2rem;
-        font-size: 0.2rem;
-        color: #FC8222; }
-      .intro .content .text p {
-        -webkit-flex: 0 1 auto;
-        flex: 0 1 auto;
-        width: 75%;
-        margin: 0.1rem auto;
-        font-size: 0.16rem;
-        color: #333; }
-      .intro .content .text .links {
-        -webkit-flex: 0 1 auto;
-        flex: 0 1 auto;
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
+      margin: 0.7rem 0 0; }
+      .intro .content li {
+        -webkit-flex: 1 1 50%;
+        flex: 1 1 50%;
+        height: 4.4rem; }
+      .intro .content .img {
+        background-size: cover; }
+      .intro .content .text {
         display: -webkit-flex;
         display: flex;
-        -webkit-justify-content: flex-start;
-        justify-content: flex-start;
-        -webkit-flex-flow: row wrap;
-        flex-flow: row wrap;
-        width: 75%;
-        margin: 0.2rem auto 0; }
-        .intro .content .text .links a {
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap; }
+        .intro .content .text h3 {
           -webkit-flex: 0 1 auto;
           flex: 0 1 auto;
-          display: block;
-          width: 0.8rem;
-          height: 0.36rem;
-          line-height: 0.36rem;
-          margin: 0 0.15rem 0.1rem 0;
-          background: #FC8222;
-          border-radius: 6px;
-          text-align: center;
-          color: #fff;
-          -webkit-transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
-          transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95); }
-          .intro .content .text .links a:hover {
-            background: #fdad6d; } }
+          width: 75%;
+          margin: 0 auto 0.2rem;
+          font-size: 0.2rem;
+          color: #FC8222; }
+        .intro .content .text p {
+          -webkit-flex: 0 1 auto;
+          flex: 0 1 auto;
+          width: 75%;
+          margin: 0.1rem auto;
+          font-size: 0.16rem;
+          color: #333; }
+        .intro .content .text .links {
+          -webkit-flex: 0 1 auto;
+          flex: 0 1 auto;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+          -webkit-flex-flow: row wrap;
+          flex-flow: row wrap;
+          width: 75%;
+          margin: 0.2rem auto 0; }
+          .intro .content .text .links a {
+            -webkit-flex: 0 1 auto;
+            flex: 0 1 auto;
+            display: block;
+            width: 0.8rem;
+            height: 0.36rem;
+            line-height: 0.36rem;
+            margin: 0 0.15rem 0.1rem 0;
+            background: #FC8222;
+            border-radius: 6px;
+            text-align: center;
+            color: #fff;
+            -webkit-transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
+            transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95); }
+            .intro .content .text .links a:hover {
+              background: #fdad6d; } }
 @media only screen and (max-width: 767px) {
   .courses {
     display: none; } }
@@ -266,8 +411,6 @@ h2.title {
     .apply .links li a {
       -webkit-transition: color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
       transition: color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95); }
-      .apply .links li a:hover {
-        color: #fdad6d; }
 .apply .dashline {
   display: -webkit-flex;
   display: flex;
@@ -343,6 +486,8 @@ h2.title {
     .apply .links li {
       margin: 0.3rem 0.07rem 0.5rem;
       font-size: 0.14rem; }
+      .apply .links li a:active {
+        color: #fdad6d; }
     .apply .dashline {
       -webkit-transform: translate(0, 0.11rem);
       transform: translate(0, 0.11rem); }
@@ -373,6 +518,8 @@ h2.title {
     .apply .links li {
       margin: 0.7rem 0.35rem 1rem;
       font-size: 0.24rem; }
+      .apply .links li a:hover {
+        color: #fdad6d; }
     .apply .dashline {
       -webkit-transform: translate(0, 0.22rem);
       transform: translate(0, 0.22rem); }
@@ -408,13 +555,11 @@ h2.title {
     .buttons div a {
       display: block;
       border: 1px solid #fff;
-      border-radius: 6px;
+      border-radius: 0.06rem;
       color: #fff;
       text-align: center;
       -webkit-transition: background 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
       transition: background 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95); }
-      .buttons div a:hover {
-        background: rgba(255, 255, 255, 0.15); }
 
 @media only screen and (max-width: 767px) {
   .buttons div {
@@ -426,7 +571,9 @@ h2.title {
       width: 2rem;
       line-height: 0.4rem;
       margin: 0.12rem;
-      font-size: 0.14rem; } }
+      font-size: 0.14rem; }
+      .buttons div a:active {
+        background: rgba(255, 255, 255, 0.15); } }
 @media only screen and (min-width: 768px) {
   .buttons div {
     -webkit-flex-flow: row wrap;
@@ -437,7 +584,9 @@ h2.title {
       height: 0.48rem;
       line-height: 0.48rem;
       margin: 0.2rem;
-      font-size: 0.16rem; } }
+      font-size: 0.16rem; }
+      .buttons div a:hover {
+        background: rgba(255, 255, 255, 0.15); } }
 @media only screen and (max-width: 767px) {
   .more_info {
     display: none; } }
@@ -466,7 +615,7 @@ h2.title {
         line-height: 0.36rem;
         margin: 0 auto;
         border: 1px solid #fff;
-        border-radius: 6px;
+        border-radius: 0.06rem;
         text-align: center;
         color: #fff;
         font-size: 0.16rem;
