@@ -926,6 +926,9 @@ h2.title {
 		&:last-of-type {
 			font-size: 0.14rem;
 		}
+		a {
+			@include aColor ($primary);
+		}
 		i {
 			padding: 0 0.1rem;
 			color: $gray_dark;

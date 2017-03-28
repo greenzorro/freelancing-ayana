@@ -649,6 +649,14 @@ h2.title {
     padding: 0.05rem; }
     .footer p:last-of-type {
       font-size: 0.14rem; }
+    .footer p a {
+      color: #FC8222; }
+      .footer p a:visited {
+        color: #FC8222; }
+      .footer p a:hover {
+        color: #fdad6d; }
+      .footer p a:active {
+        color: #fdad6d; }
     .footer p i {
       padding: 0 0.1rem;
       color: #ccc; }
