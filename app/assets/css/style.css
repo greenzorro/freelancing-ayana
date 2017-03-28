@@ -139,11 +139,19 @@ h2.title {
         height: 0.4rem;
         line-height: 0.4rem;
         margin: 0.25rem auto;
-        background: #FC8222;
         border-radius: 0.04rem;
         font-size: 0.16rem;
         color: #fff;
-        text-align: center; }
+        text-align: center;
+        -webkit-transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
+        transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
+        background-color: #FC8222; }
+        .sign_up .bg_wrap .form .submit:visited {
+          background-color: #FC8222; }
+        .sign_up .bg_wrap .form .submit:hover {
+          background-color: #fdad6d; }
+        .sign_up .bg_wrap .form .submit:active {
+          background-color: #fdad6d; }
 
 @media only screen and (max-width: 767px) {
   .sign_up {
@@ -264,14 +272,18 @@ h2.title {
             height: 0.36rem;
             line-height: 0.36rem;
             margin: 0 0.15rem 0.1rem 0;
-            background: #FC8222;
             border-radius: 6px;
             text-align: center;
             color: #fff;
             -webkit-transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
-            transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95); }
+            transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
+            background-color: #FC8222; }
+            .intro .content .text .links a:visited {
+              background-color: #FC8222; }
             .intro .content .text .links a:hover {
-              background: #fdad6d; } }
+              background-color: #fdad6d; }
+            .intro .content .text .links a:active {
+              background-color: #fdad6d; } }
 @media only screen and (max-width: 767px) {
   .courses {
     display: none; } }
@@ -411,7 +423,14 @@ h2.title {
     flex: 0 1 auto; }
     .apply .links li a {
       -webkit-transition: color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
-      transition: color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95); }
+      transition: color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
+      color: #FC8222; }
+      .apply .links li a:visited {
+        color: #FC8222; }
+      .apply .links li a:hover {
+        color: #fdad6d; }
+      .apply .links li a:active {
+        color: #fdad6d; }
 .apply .dashline {
   display: -webkit-flex;
   display: flex;
@@ -487,8 +506,6 @@ h2.title {
     .apply .links li {
       margin: 0.3rem 0.07rem 0.5rem;
       font-size: 0.14rem; }
-      .apply .links li a:active {
-        color: #fdad6d; }
     .apply .dashline {
       -webkit-transform: translate(0, 0.11rem);
       transform: translate(0, 0.11rem); }
@@ -519,8 +536,6 @@ h2.title {
     .apply .links li {
       margin: 0.7rem 0.35rem 1rem;
       font-size: 0.24rem; }
-      .apply .links li a:hover {
-        color: #fdad6d; }
     .apply .dashline {
       -webkit-transform: translate(0, 0.22rem);
       transform: translate(0, 0.22rem); }
@@ -560,7 +575,14 @@ h2.title {
       color: #fff;
       text-align: center;
       -webkit-transition: background 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
-      transition: background 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95); }
+      transition: background 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
+      background-color: #FC8222; }
+      .buttons div a:visited {
+        background-color: #FC8222; }
+      .buttons div a:hover {
+        background-color: #fdad6d; }
+      .buttons div a:active {
+        background-color: #fdad6d; }
 
 @media only screen and (max-width: 767px) {
   .buttons div {
@@ -572,9 +594,7 @@ h2.title {
       width: 2rem;
       line-height: 0.4rem;
       margin: 0.12rem;
-      font-size: 0.14rem; }
-      .buttons div a:active {
-        background: rgba(255, 255, 255, 0.15); } }
+      font-size: 0.14rem; } }
 @media only screen and (min-width: 768px) {
   .buttons div {
     -webkit-flex-flow: row wrap;
@@ -585,9 +605,7 @@ h2.title {
       height: 0.48rem;
       line-height: 0.48rem;
       margin: 0.2rem;
-      font-size: 0.16rem; }
-      .buttons div a:hover {
-        background: rgba(255, 255, 255, 0.15); } }
+      font-size: 0.16rem; } }
 @media only screen and (max-width: 767px) {
   .more_info {
     display: none; } }
@@ -623,7 +641,7 @@ h2.title {
         -webkit-transition: background 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
         transition: background 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95); }
         .more_info .bg_wrap a:hover {
-          background: rgba(255, 255, 255, 0.15); } }
+          background: rgba(255, 255, 255, 0.3); } }
 .footer {
   padding: 0.2rem 0;
   text-align: center; }

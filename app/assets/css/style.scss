@@ -59,6 +59,24 @@ $pc-min: 768px;
 @mixin align-content ($value) {
 	-webkit-align-content: $value;
 	align-content: $value;}
+@mixin aColor ($value) {
+	color: $value;
+	&:visited {
+		color: $value;}
+	&:hover {
+		color: lighten($value,15%);}
+	&:active {
+		color: lighten($value,15%);}
+}
+@mixin aBgColor ($value) {
+	background-color: $value;
+	&:visited {
+		background-color: $value;}
+	&:hover {
+		background-color: lighten($value,15%);}
+	&:active {
+		background-color: lighten($value,15%);}
+}
 
 
 
@@ -250,11 +268,12 @@ h2.title {
 				height: 0.4rem;
 				line-height: 0.4rem;
 				margin: 0.25rem auto;
-				background: $primary;
 				border-radius: 0.04rem;
 				font-size: 0.16rem;
 				color: $white;
 				text-align: center;
+				@include transition (background-color 0.5s $easing);
+				@include aBgColor ($primary);
 			}
 		}
 	}
@@ -403,14 +422,11 @@ h2.title {
 						height: 0.36rem;
 						line-height: 0.36rem;
 						margin: 0 0.15rem 0.1rem 0;
-						background: $primary;
 						border-radius: 6px;
 						text-align: center;
 						color: $white;
 						@include transition (background-color 0.5s $easing);
-						&:hover {
-							background: lighten($primary, 15%);
-						}
+						@include aBgColor ($primary);
 					}
 				}
 			}
@@ -623,6 +639,7 @@ h2.title {
 			@include flex (0 1 auto);
 			a {
 				@include transition (color 0.5s $easing);
+				@include aColor ($primary);
 			}
 		}
 	}
@@ -709,11 +726,6 @@ h2.title {
 			li {
 				margin: 0.3rem 0.07rem 0.5rem;
 				font-size: 0.14rem;
-				a {
-					&:active {
-						color: lighten($primary, 15%);
-					}
-				}
 			}
 		}
 		.dashline {
@@ -757,11 +769,6 @@ h2.title {
 			li {
 				margin: 0.7rem 0.35rem 1rem;
 				font-size: 0.24rem;
-				a {
-					&:hover {
-						color: lighten($primary, 15%);
-					}
-				}
 			}
 		}
 		.dashline {
@@ -818,6 +825,7 @@ h2.title {
 			color: $white;
 			text-align: center;
 			@include transition (background 0.5s $easing);
+			@include aBgColor ($primary);
 		}
 	}
 }
@@ -831,9 +839,6 @@ h2.title {
 			line-height: 0.4rem;
 			margin: 0.12rem;
 			font-size: 0.14rem;
-			&:active {
-				background: rgba(255,255,255,0.15);
-			}
 		}
 	}
 }
@@ -847,9 +852,6 @@ h2.title {
 			line-height: 0.48rem;
 			margin: 0.2rem;
 			font-size: 0.16rem;
-			&:hover {
-				background: rgba(255,255,255,0.15);
-			}
 		}
 	}
 }
@@ -902,7 +904,7 @@ h2.title {
 				font-size: 0.16rem;
 				@include transition (background 0.5s $easing);
 				&:hover {
-					background: rgba(255,255,255,0.15);
+					background: rgba(255,255,255,0.3);
 				}
 			}
 		}
