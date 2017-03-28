@@ -196,10 +196,10 @@ h2.title {
 					@include flex (1 1 25%);
 					display: block;
 					height: 0.05rem;
-					&:nth-child(even) {
+					&:nth-child(odd) {
 						background-color: $primary;
 					}
-					&:nth-child(odd) {
+					&:nth-child(even) {
 						background-color: $accent;
 					}
 				}

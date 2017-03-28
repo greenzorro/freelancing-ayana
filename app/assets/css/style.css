@@ -94,9 +94,9 @@ h2.title {
           flex: 1 1 25%;
           display: block;
           height: 0.05rem; }
-          .sign_up .bg_wrap .form .stripe i:nth-child(even) {
-            background-color: #FC8222; }
           .sign_up .bg_wrap .form .stripe i:nth-child(odd) {
+            background-color: #FC8222; }
+          .sign_up .bg_wrap .form .stripe i:nth-child(even) {
             background-color: #002A5B; }
       .sign_up .bg_wrap .form h2 {
         text-align: center;
