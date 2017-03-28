@@ -649,18 +649,20 @@ h2.title {
     padding: 0.05rem; }
     .footer p:last-of-type {
       font-size: 0.14rem; }
-    .footer p a {
-      -webkit-transition: color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
-      transition: color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
-      color: #FC8222; }
-      .footer p a:visited {
-        color: #FC8222; }
-      .footer p a:hover {
-        color: #fdad6d; }
-      .footer p a:active {
-        color: #FC8222; }
     .footer p i {
       padding: 0 0.1rem;
       color: #ccc; }
+
+@media only screen and (min-width: 768px) {
+  .footer p a {
+    -webkit-transition: color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
+    transition: color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
+    color: #FC8222; }
+    .footer p a:visited {
+      color: #FC8222; }
+    .footer p a:hover {
+      color: #fdad6d; }
+    .footer p a:active {
+      color: #FC8222; } }
 
 /*# sourceMappingURL=style.css.map */
