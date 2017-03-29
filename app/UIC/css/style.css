@@ -61,10 +61,10 @@ h2.title {
     height: calc(0.72rem - 0.15rem);
     padding: 0.15rem 1rem; } }
 .sign_up {
-  background-color: #00B5E2;
+  background-color: #001E62;
   background-repeat: no-repeat; }
   .sign_up .bg_wrap {
-    background-color: rgba(0, 181, 226, 0.7); }
+    background-color: rgba(0, 30, 98, 0.7); }
     .sign_up .bg_wrap .instruction {
       color: #fff; }
       .sign_up .bg_wrap .instruction h1 {
@@ -96,10 +96,10 @@ h2.title {
           .sign_up .bg_wrap .form .stripe i:nth-child(odd) {
             background-color: #D50032; }
           .sign_up .bg_wrap .form .stripe i:nth-child(even) {
-            background-color: #00B5E2; }
+            background-color: #001E62; }
       .sign_up .bg_wrap .form h2 {
         text-align: center;
-        color: #00B5E2; }
+        color: #001E62; }
       .sign_up .bg_wrap .form .row {
         margin: 0.12rem 0.2rem;
         border: 1px solid #ccc;
@@ -328,13 +328,13 @@ h2.title {
             border: 1px solid #ccc;
             border-radius: 50%;
             background: #fff;
-            color: #00B5E2;
+            color: #001E62;
             text-align: center; }
           .courses .content .right ol li p {
             line-height: 0.28rem;
             padding: 0.07rem 0 0.07rem 0.6rem;
             font-size: 0.2rem;
-            color: #00B5E2; }
+            color: #001E62; }
           .courses .content .right ol li:last-of-type {
             margin: 0; } }
 .schedule p {
@@ -354,9 +354,9 @@ h2.title {
   .schedule ul li:nth-child(odd) header {
     background: #D50032; }
 .schedule ul li:nth-child(even) {
-  border: 1px solid #00B5E2; }
+  border: 1px solid #001E62; }
   .schedule ul li:nth-child(even) header {
-    background: #00B5E2; }
+    background: #001E62; }
 .schedule ul li span {
   display: block;
   color: #333;
@@ -447,7 +447,7 @@ h2.title {
       -webkit-flex: 0 1 auto;
       flex: 0 1 auto;
       display: block;
-      background: #00B5E2;
+      background: #001E62;
       border-radius: 50%; }
     .apply .dashline p:first-of-type i {
       background: #D50032; }
@@ -463,14 +463,14 @@ h2.title {
     .apply .steps li span {
       display: block;
       margin: 0 auto;
-      background: #00B5E2;
+      background: #001E62;
       border-radius: 50%;
       text-align: center;
       color: #fff; }
     .apply .steps li i {
       display: block;
       margin: 0 auto;
-      background-color: #00B5E2;
+      background-color: #001E62;
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -485,7 +485,7 @@ h2.title {
       background-image: url(../images/icon_apply_4.png); }
     .apply .steps li p {
       text-align: center;
-      color: #00B5E2; }
+      color: #001E62; }
   .apply .steps li:first-of-type {
     opacity: 1; }
     .apply .steps li:first-of-type span {
@@ -620,7 +620,7 @@ h2.title {
     background-size: cover; }
     .more_info .bg_wrap {
       padding: 1rem 0;
-      background-color: rgba(0, 181, 226, 0.7);
+      background-color: rgba(0, 30, 98, 0.7);
       text-align: center; }
       .more_info .bg_wrap h2.title {
         color: #fff; }
