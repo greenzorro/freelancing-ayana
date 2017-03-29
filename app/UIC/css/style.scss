@@ -3,9 +3,9 @@
 //*********************************************************************//
 
 // value settings
-$primary: #FC8222;
-$accent: #002A5B;
-$accent2: rgba(0, 42, 91, 0.7);
+$primary: #D50032;
+$accent: #00B5E2;
+$accent2: rgba(0, 181, 226, 0.7);
 $white: #fff;
 $black: #333;
 $gray_dark: #ccc;
@@ -386,6 +386,7 @@ h2.title {
 				@include display-flex ();
 				@include justify-content (center);
 				@include flex-flow (column wrap);
+				background-color: $gray_light;
 				h3 {
 					@include flex (0 1 auto);
 					width: 75%;

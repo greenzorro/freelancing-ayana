@@ -17,29 +17,29 @@ body {
   background: #fff; }
 
 a {
-  color: #FC8222; }
+  color: #461D7C; }
 
 input, textarea, button {
   font-family: -apple-system,Helvetica,Arial,"PingFang SC","Source Han Sans SC","Microsoft YaHei","WenQuanYi MicroHei",sans-serif; }
 
 ::selection {
-  background: #FC8222;
+  background: #461D7C;
   color: #fff; }
 
 ::-moz-selection {
-  background: #FC8222;
+  background: #461D7C;
   color: #fff; }
 
 h2.title {
   text-align: center;
-  color: #FC8222; }
+  color: #461D7C; }
   h2.title:after {
     content: "";
     display: block;
     width: 0.4rem;
     height: 0.02rem;
     margin: 0.1rem auto 0;
-    background: #FC8222; }
+    background: #461D7C; }
 
 @media only screen and (max-width: 767px) {
   h2.title {
@@ -61,10 +61,10 @@ h2.title {
     height: calc(0.72rem - 0.15rem);
     padding: 0.15rem 1rem; } }
 .sign_up {
-  background-color: #002A5B;
+  background-color: #FDD023;
   background-repeat: no-repeat; }
   .sign_up .bg_wrap {
-    background-color: rgba(0, 42, 91, 0.7); }
+    background-color: rgba(253, 208, 35, 0.7); }
     .sign_up .bg_wrap .instruction {
       color: #fff; }
       .sign_up .bg_wrap .instruction h1 {
@@ -94,12 +94,12 @@ h2.title {
           display: block;
           height: 0.05rem; }
           .sign_up .bg_wrap .form .stripe i:nth-child(odd) {
-            background-color: #FC8222; }
+            background-color: #461D7C; }
           .sign_up .bg_wrap .form .stripe i:nth-child(even) {
-            background-color: #002A5B; }
+            background-color: #FDD023; }
       .sign_up .bg_wrap .form h2 {
         text-align: center;
-        color: #002A5B; }
+        color: #FDD023; }
       .sign_up .bg_wrap .form .row {
         margin: 0.12rem 0.2rem;
         border: 1px solid #ccc;
@@ -133,7 +133,7 @@ h2.title {
         height: 0.4rem;
         line-height: 0.4rem;
         margin: 0.25rem auto;
-        background: #FC8222;
+        background: #461D7C;
         border-radius: 0.04rem;
         font-size: 0.16rem;
         color: #fff;
@@ -198,13 +198,13 @@ h2.title {
         .sign_up .bg_wrap .form .submit {
           -webkit-transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
           transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
-          background-color: #FC8222; }
+          background-color: #461D7C; }
           .sign_up .bg_wrap .form .submit:visited {
-            background-color: #FC8222; }
+            background-color: #461D7C; }
           .sign_up .bg_wrap .form .submit:hover {
-            background-color: #fdad6d; }
+            background-color: #692bba; }
           .sign_up .bg_wrap .form .submit:active {
-            background-color: #FC8222; } }
+            background-color: #461D7C; } }
 @media only screen and (max-width: 767px) {
   .intro {
     display: none; } }
@@ -233,14 +233,15 @@ h2.title {
         -webkit-justify-content: center;
         justify-content: center;
         -webkit-flex-flow: column wrap;
-        flex-flow: column wrap; }
+        flex-flow: column wrap;
+        background-color: #fafafa; }
         .intro .content .text h3 {
           -webkit-flex: 0 1 auto;
           flex: 0 1 auto;
           width: 75%;
           margin: 0 auto 0.2rem;
           font-size: 0.2rem;
-          color: #FC8222; }
+          color: #461D7C; }
         .intro .content .text p {
           -webkit-flex: 0 1 auto;
           flex: 0 1 auto;
@@ -272,13 +273,13 @@ h2.title {
             color: #fff;
             -webkit-transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
             transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
-            background-color: #FC8222; }
+            background-color: #461D7C; }
             .intro .content .text .links a:visited {
-              background-color: #FC8222; }
+              background-color: #461D7C; }
             .intro .content .text .links a:hover {
-              background-color: #fdad6d; }
+              background-color: #692bba; }
             .intro .content .text .links a:active {
-              background-color: #FC8222; }
+              background-color: #461D7C; }
     .intro .degrees {
       margin: 0.4rem 0 0;
       text-align: center; }
@@ -308,7 +309,7 @@ h2.title {
         .courses .content .left h3 {
           margin: 0 0 0.3rem;
           font-size: 0.2rem;
-          color: #FC8222; }
+          color: #461D7C; }
         .courses .content .left p {
           margin: 0.2rem 0 0;
           font-size: 0.16rem;
@@ -327,13 +328,13 @@ h2.title {
             border: 1px solid #ccc;
             border-radius: 50%;
             background: #fff;
-            color: #002A5B;
+            color: #FDD023;
             text-align: center; }
           .courses .content .right ol li p {
             line-height: 0.28rem;
             padding: 0.07rem 0 0.07rem 0.6rem;
             font-size: 0.2rem;
-            color: #002A5B; }
+            color: #FDD023; }
           .courses .content .right ol li:last-of-type {
             margin: 0; } }
 .schedule p {
@@ -349,13 +350,13 @@ h2.title {
     display: block;
     margin: 0.1rem 0 0; }
 .schedule ul li:nth-child(odd) {
-  border: 1px solid #FC8222; }
+  border: 1px solid #461D7C; }
   .schedule ul li:nth-child(odd) header {
-    background: #FC8222; }
+    background: #461D7C; }
 .schedule ul li:nth-child(even) {
-  border: 1px solid #002A5B; }
+  border: 1px solid #FDD023; }
   .schedule ul li:nth-child(even) header {
-    background: #002A5B; }
+    background: #FDD023; }
 .schedule ul li span {
   display: block;
   color: #333;
@@ -446,10 +447,10 @@ h2.title {
       -webkit-flex: 0 1 auto;
       flex: 0 1 auto;
       display: block;
-      background: #002A5B;
+      background: #FDD023;
       border-radius: 50%; }
     .apply .dashline p:first-of-type i {
-      background: #FC8222; }
+      background: #461D7C; }
 .apply .steps {
   display: -webkit-flex;
   display: flex;
@@ -462,14 +463,14 @@ h2.title {
     .apply .steps li span {
       display: block;
       margin: 0 auto;
-      background: #002A5B;
+      background: #FDD023;
       border-radius: 50%;
       text-align: center;
       color: #fff; }
     .apply .steps li i {
       display: block;
       margin: 0 auto;
-      background-color: #002A5B;
+      background-color: #FDD023;
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -484,15 +485,15 @@ h2.title {
       background-image: url(../images/icon_apply_4.png); }
     .apply .steps li p {
       text-align: center;
-      color: #002A5B; }
+      color: #FDD023; }
   .apply .steps li:first-of-type {
     opacity: 1; }
     .apply .steps li:first-of-type span {
-      background: #FC8222; }
+      background: #461D7C; }
     .apply .steps li:first-of-type i {
-      background-color: #FC8222; }
+      background-color: #461D7C; }
     .apply .steps li:first-of-type p {
-      color: #FC8222; }
+      color: #461D7C; }
 
 @media only screen and (max-width: 767px) {
   .apply {
@@ -533,13 +534,13 @@ h2.title {
       .apply .links li a {
         -webkit-transition: color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
         transition: color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
-        color: #FC8222; }
+        color: #461D7C; }
         .apply .links li a:visited {
-          color: #FC8222; }
+          color: #461D7C; }
         .apply .links li a:hover {
-          color: #fdad6d; }
+          color: #692bba; }
         .apply .links li a:active {
-          color: #FC8222; }
+          color: #461D7C; }
     .apply .dashline {
       -webkit-transform: translate(0, 0.22rem);
       transform: translate(0, 0.22rem); }
@@ -564,7 +565,7 @@ h2.title {
       .apply .steps li p {
         font-size: 0.2rem; } }
 .buttons {
-  background: #FC8222; }
+  background: #461D7C; }
   .buttons div {
     display: -webkit-flex;
     display: flex;
@@ -603,13 +604,13 @@ h2.title {
       font-size: 0.16rem;
       -webkit-transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
       transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
-      background-color: #FC8222; }
+      background-color: #461D7C; }
       .buttons div a:visited {
-        background-color: #FC8222; }
+        background-color: #461D7C; }
       .buttons div a:hover {
-        background-color: #fdad6d; }
+        background-color: #692bba; }
       .buttons div a:active {
-        background-color: #FC8222; } }
+        background-color: #461D7C; } }
 @media only screen and (max-width: 767px) {
   .more_info {
     display: none; } }
@@ -619,7 +620,7 @@ h2.title {
     background-size: cover; }
     .more_info .bg_wrap {
       padding: 1rem 0;
-      background-color: rgba(0, 42, 91, 0.7);
+      background-color: rgba(253, 208, 35, 0.7);
       text-align: center; }
       .more_info .bg_wrap h2.title {
         color: #fff; }
@@ -662,12 +663,12 @@ h2.title {
   .footer p a {
     -webkit-transition: color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
     transition: color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
-    color: #FC8222; }
+    color: #461D7C; }
     .footer p a:visited {
-      color: #FC8222; }
+      color: #461D7C; }
     .footer p a:hover {
-      color: #fdad6d; }
+      color: #692bba; }
     .footer p a:active {
-      color: #FC8222; } }
+      color: #461D7C; } }
 
 /*# sourceMappingURL=style.css.map */
