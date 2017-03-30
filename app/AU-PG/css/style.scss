@@ -457,10 +457,10 @@ h2.title {
 			@include flex-flow (row wrap);
 			@include align-items (center);
 			margin: 0.7rem 0 0;
-			padding: 0.7rem 10%;
+			padding: 0.7rem 5%;
 			background: $gray_light;
 			.left {
-				@include flex (0 1 40%);
+				@include flex (0 1 35%);
 				h3 {
 					margin: 0 0 0.3rem;
 					font-size: 0.2rem;
@@ -473,7 +473,8 @@ h2.title {
 				}
 			}
 			.right {
-				@include flex (0 1 40%);
+				@include flex (0 1 50%);
+				max-width: 50%;
 				ol {
 					li {
 						margin: 0 0 0.2rem;
@@ -499,6 +500,9 @@ h2.title {
 							margin: 0;
 						}
 					}
+				}
+				img {
+					width: 100%;
 				}
 			}
 		}

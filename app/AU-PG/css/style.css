@@ -301,11 +301,11 @@ h2.title {
       -webkit-align-items: center;
       align-items: center;
       margin: 0.7rem 0 0;
-      padding: 0.7rem 10%;
+      padding: 0.7rem 5%;
       background: #fafafa; }
       .courses .content .left {
-        -webkit-flex: 0 1 40%;
-        flex: 0 1 40%; }
+        -webkit-flex: 0 1 35%;
+        flex: 0 1 35%; }
         .courses .content .left h3 {
           margin: 0 0 0.3rem;
           font-size: 0.2rem;
@@ -315,8 +315,9 @@ h2.title {
           font-size: 0.16rem;
           color: #333; }
       .courses .content .right {
-        -webkit-flex: 0 1 40%;
-        flex: 0 1 40%; }
+        -webkit-flex: 0 1 50%;
+        flex: 0 1 50%;
+        max-width: 50%; }
         .courses .content .right ol li {
           margin: 0 0 0.2rem; }
           .courses .content .right ol li i {
@@ -336,7 +337,9 @@ h2.title {
             font-size: 0.2rem;
             color: #03244D; }
           .courses .content .right ol li:last-of-type {
-            margin: 0; } }
+            margin: 0; }
+        .courses .content .right img {
+          width: 100%; } }
 .schedule p {
   margin: 0 auto;
   text-align: center;
