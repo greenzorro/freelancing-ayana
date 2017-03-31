@@ -14,7 +14,9 @@ $easing: cubic-bezier(0.15, 0.95, 0.41, 0.95);
 
 // responsive break points
 $phone-max: 767px;
-$pc-min: 768px;
+$pad-min: 768px;
+$pad-max: 1279px;
+$pc-min: 1280px;
 
 // functions
 @mixin box-sizing ($value) {
@@ -136,8 +138,8 @@ h2.title {
 		font-size: 0.18rem;
 	}
 }
-// pc
-@media only screen and (min-width: $pc-min){
+// pad and pc
+@media only screen and (min-width: $pad-min){
 	h2.title {
 		font-size: 0.3rem;
 	}
@@ -165,8 +167,8 @@ h2.title {
 		padding: 0.1rem 0.2rem;
 	}
 }
-// pc
-@media only screen and (min-width: $pc-min){
+// pad and pc
+@media only screen and (min-width: $pad-min){
 	.header {
 		height: calc(0.72rem - 0.15rem);
 		padding: 0.15rem 1rem;
@@ -302,8 +304,8 @@ h2.title {
 		}
 	}
 }
-// pc
-@media only screen and (min-width: $pc-min){
+// pad and pc
+@media only screen and (min-width: $pad-min){
 	.sign_up {
 		background-position: center center;
 		background-size: cover;
@@ -364,8 +366,8 @@ h2.title {
 		display: none;
 	}
 }
-// pc
-@media only screen and (min-width: $pc-min){
+// pad and pc
+@media only screen and (min-width: $pad-min){
 	.intro {
 		padding: 1rem 0 0;
 		.content {
@@ -430,6 +432,9 @@ h2.title {
 			img {
 				max-width: 10rem;
 			}
+			p {
+				font-size: 0.18rem;
+			}
 		}
 	}
 }
@@ -447,8 +452,8 @@ h2.title {
 		display: none;
 	}
 }
-// pc
-@media only screen and (min-width: $pc-min){
+// pad and pc
+@media only screen and (min-width: $pad-min){
 	.courses {
 		padding: 1rem 0 0;
 		.content {
@@ -528,11 +533,20 @@ h2.title {
 	ul {
 		li {
 			header {
+				min-height: 1.3rem;
+				padding: 0 0.3rem;
 				text-align: center;
 				color: $white;
+				@include display-flex ();
+				@include justify-content (center);
+				@include flex-flow (column wrap);
+				h3 {
+					@include flex (0 1 auto);
+				}
 				time {
+					@include flex (0 1 auto);
 					display: block;
-					margin: 0.1rem 0 0;
+					margin: 0.05rem 0 0;
 				}
 			}
 			&:nth-child(odd) {
@@ -566,30 +580,29 @@ h2.title {
 		ul {
 			padding: 0 0.2rem;
 			li {
-				padding: 0 0 0.3rem;
+				padding: 0 0 0.25rem;
 				margin: 0.2rem 0;
 				header {
-					padding: 0.3rem;
 					h3 {
-						font-size: 0.18rem;
+						font-size: 0.16rem;
 					}
 					time {
-						font-size: 0.18rem;
+						font-size: 0.16rem;
 					}
 				}
 				span {
-					padding: 0.2rem 0 0;
+					padding: 0.15rem 0 0;
 					font-size: 0.14rem;
 					&:first-of-type {
-						padding: 0.3rem 0 0;
+						padding: 0.25rem 0 0;
 					}
 				}
 			}
 		}
 	}
 }
-// pc
-@media only screen and (min-width: $pc-min){
+// pad and pc
+@media only screen and (min-width: $pad-min){
 	.schedule {
 		padding: 1rem 0 0;
 		p {
@@ -598,32 +611,47 @@ h2.title {
 		}
 		ul {
 			@include display-flex ();
-			@include justify-content (space-around);
+			@include justify-content (center);
 			@include flex-flow (row wrap);
-			max-width: 7.6rem;
 			padding: 0.7rem 0 0;
 			margin: 0 auto;
 			li {
-				@include flex (0 1 3.4rem);
-				margin: 0 0 0.4rem;
-				padding: 0 0 0.6rem;
+				margin: 0 1.2% 0.4rem;
+				padding: 0 0 0.4rem;
 				header {
-					padding: 0.36rem;
 					h3 {
-						font-size: 0.24rem;
+						font-size: 0.2rem;
 					}
 					time {
-						font-size: 0.2rem;
+						font-size: 0.16rem;
 					}
 				}
 				span {
-					padding: 0.5rem 0 0;
-					font-size: 0.2rem;
+					padding: 0.25rem 0 0;
+					font-size: 0.16rem;
 					&:first-of-type {
-						padding: 0.6rem 0 0;
+						padding: 0.4rem 0 0;
 					}
 				}
 			}
+		}
+	}
+}
+// pad
+@media only screen and (min-width: $pad-min) and (max-width: $pad-max){
+	.schedule ul {
+		max-width: 7.6rem;
+		li {
+			@include flex (0 1 3.4rem);
+		}
+	}
+}
+// pc
+@media only screen and (min-width: $pc-min){
+	.schedule ul {
+		max-width: 12rem;
+		li {
+			@include flex (0 1 22%);
 		}
 	}
 }
@@ -762,8 +790,8 @@ h2.title {
 		}
 	}
 }
-// pc
-@media only screen and (min-width: $pc-min){
+// pad and pc
+@media only screen and (min-width: $pad-min){
 	.apply {
 		padding: 1rem 0;
 		.links {
@@ -845,8 +873,8 @@ h2.title {
 		}
 	}
 }
-// pc
-@media only screen and (min-width: $pc-min){
+// pad and pc
+@media only screen and (min-width: $pad-min){
 	.buttons div {
 		@include flex-flow (row wrap);
 		a {
@@ -874,8 +902,8 @@ h2.title {
 		display: none;
 	}
 }
-// pc
-@media only screen and (min-width: $pc-min){
+// pad and pc
+@media only screen and (min-width: $pad-min){
 	.more_info {
 		background-position: center center;
 		background-size: cover;
@@ -938,8 +966,8 @@ h2.title {
 		}
 	}
 }
-// pc
-@media only screen and (min-width: $pc-min){
+// pad and pc
+@media only screen and (min-width: $pad-min){
 	.footer p a {
 		@include transition (color 0.5s $easing);
 		@include aColor ($primary);

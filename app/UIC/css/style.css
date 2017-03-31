@@ -284,7 +284,9 @@ h2.title {
       margin: 0.4rem 0 0;
       text-align: center; }
       .intro .degrees img {
-        max-width: 10rem; } }
+        max-width: 10rem; }
+      .intro .degrees p {
+        font-size: 0.18rem; } }
 @media only screen and (max-width: 767px) {
   .courses {
     display: none; } }
@@ -347,11 +349,24 @@ h2.title {
   .schedule p:first-of-type {
     padding-top: 0.3rem; }
 .schedule ul li header {
+  min-height: 1.3rem;
+  padding: 0 0.3rem;
   text-align: center;
-  color: #fff; }
+  color: #fff;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap; }
+  .schedule ul li header h3 {
+    -webkit-flex: 0 1 auto;
+    flex: 0 1 auto; }
   .schedule ul li header time {
+    -webkit-flex: 0 1 auto;
+    flex: 0 1 auto;
     display: block;
-    margin: 0.1rem 0 0; }
+    margin: 0.05rem 0 0; }
 .schedule ul li:nth-child(odd) {
   border: 1px solid #D50032; }
   .schedule ul li:nth-child(odd) header {
@@ -374,19 +389,17 @@ h2.title {
     .schedule ul {
       padding: 0 0.2rem; }
       .schedule ul li {
-        padding: 0 0 0.3rem;
+        padding: 0 0 0.25rem;
         margin: 0.2rem 0; }
-        .schedule ul li header {
-          padding: 0.3rem; }
-          .schedule ul li header h3 {
-            font-size: 0.18rem; }
-          .schedule ul li header time {
-            font-size: 0.18rem; }
+        .schedule ul li header h3 {
+          font-size: 0.16rem; }
+        .schedule ul li header time {
+          font-size: 0.16rem; }
         .schedule ul li span {
-          padding: 0.2rem 0 0;
+          padding: 0.15rem 0 0;
           font-size: 0.14rem; }
           .schedule ul li span:first-of-type {
-            padding: 0.3rem 0 0; } }
+            padding: 0.25rem 0 0; } }
 @media only screen and (min-width: 768px) {
   .schedule {
     padding: 1rem 0 0; }
@@ -396,29 +409,36 @@ h2.title {
     .schedule ul {
       display: -webkit-flex;
       display: flex;
-      -webkit-justify-content: space-around;
-      justify-content: space-around;
+      -webkit-justify-content: center;
+      justify-content: center;
       -webkit-flex-flow: row wrap;
       flex-flow: row wrap;
-      max-width: 7.6rem;
       padding: 0.7rem 0 0;
       margin: 0 auto; }
       .schedule ul li {
-        -webkit-flex: 0 1 3.4rem;
-        flex: 0 1 3.4rem;
-        margin: 0 0 0.4rem;
-        padding: 0 0 0.6rem; }
-        .schedule ul li header {
-          padding: 0.36rem; }
-          .schedule ul li header h3 {
-            font-size: 0.24rem; }
-          .schedule ul li header time {
-            font-size: 0.2rem; }
-        .schedule ul li span {
-          padding: 0.5rem 0 0;
+        margin: 0 1.2% 0.4rem;
+        padding: 0 0 0.4rem; }
+        .schedule ul li header h3 {
           font-size: 0.2rem; }
+        .schedule ul li header time {
+          font-size: 0.16rem; }
+        .schedule ul li span {
+          padding: 0.25rem 0 0;
+          font-size: 0.16rem; }
           .schedule ul li span:first-of-type {
-            padding: 0.6rem 0 0; } }
+            padding: 0.4rem 0 0; } }
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .schedule ul {
+    max-width: 7.6rem; }
+    .schedule ul li {
+      -webkit-flex: 0 1 3.4rem;
+      flex: 0 1 3.4rem; } }
+@media only screen and (min-width: 1280px) {
+  .schedule ul {
+    max-width: 12rem; }
+    .schedule ul li {
+      -webkit-flex: 0 1 22%;
+      flex: 0 1 22%; } }
 .apply .links {
   display: -webkit-flex;
   display: flex;
