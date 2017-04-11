@@ -1,0 +1,76 @@
+/*
+##############################################################
+### OWL CAROUSEL THEME (CSS) FOR THE SLIDE ANYTHING PLUGIN ###
+##############################################################
+*/
+
+/* ### PAGINATION BUTTONS ### */
+.owl-theme .owl-controls .owl-pagination {
+	position:absolute;
+	width:100%;
+	padding:10px 0px 0px !important;
+	bottom:-22px !important;
+	text-align:center !important;
+	font-size:12px !important;
+	line-height:12px !important;
+}
+.owl-theme .owl-controls .owl-pagination .owl-page {
+	display: inline-block !important;
+}
+.owl-theme .owl-controls .owl-pagination .owl-page span {
+	display:inline-block !important;
+	border-style:none !important;
+	background-color:rgba(0,0,0,0.2) !important;
+	width:10px !important;
+	height:10px !important;
+	border-radius:50% !important;
+	margin:0px 3px !important;
+	transition:all .3s ease-in-out !important;
+	-webkit-transition:all .3s ease-in-out !important;
+	-moz-transition:all .3s ease-in-out !important;
+	-o-transition:all .3s ease-in-out !important;
+}
+.owl-theme .owl-controls .owl-pagination .active span {
+	background-color:rgba(0,0,0,0.5) !important;
+}
+.owl-theme .owl-controls .owl-pagination .owl-page span:hover {
+	background-color:rgba(0,0,0,0.5) !important;
+}
+.owl-pagination-true {
+	margin-bottom:22px !important;
+}
+
+/* ### PREVIOUS AND NEXT ARROW BUTTONS ### */
+.owl-theme .owl-controls .owl-buttons {
+	display:block !important;
+}
+.autohide-arrows .owl-controls .owl-buttons {
+	display:none !important;
+}
+.autohide-arrows:hover .owl-controls .owl-buttons {
+	display:block !important;
+}
+.owl-theme .owl-controls .owl-buttons div {
+	position:absolute;
+	top:50%;
+	padding:2px 0px !important;
+	display:inline-block !important;
+	margin-top:-15px !important;
+	line-height:30px !important;
+	height:30px !important;
+	width:18px !important;
+	transition:all .3s ease-in-out !important;
+	-webkit-transition:all .3s ease-in-out !important;
+	-moz-transition:all .3s ease-in-out !important;
+	-o-transition:all .3s ease-in-out !important;
+}
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+	left:5px;
+	background:transparent url('../images/icon_prev.png') no-repeat 1px 3px !important;
+	padding:2px 7px 2px 5px !important;
+}
+.owl-theme .owl-controls .owl-buttons .owl-next {
+	right:5px;
+	background:transparent url('../images/icon_next.png') no-repeat 1px 3px !important;
+	padding:2px 5px 2px 7px !important;
+}

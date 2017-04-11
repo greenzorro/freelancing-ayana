@@ -1,0 +1,82 @@
+
+ #wow-modal-overlay-1 {
+	 top: 0; 
+	 right: 0; 
+	 bottom: 0; 
+	 left: 0; 
+	 z-index: 99999; 
+	 background-color: rgba(0, 0, 0, 0.7); 
+	 position: fixed; 
+	 cursor: default; 
+	 display: none; 
+	 width: 100%; 
+	 height: 100%; 
+	 overflow: auto;	  
+} 
+#wow-modal-overclose-1 {
+	top: 0; 
+	right: 0; 
+	bottom: 0; 
+	left: 0; 
+	z-index: 99999; 
+	cursor: default;		
+	width: 100%; 
+	height: 100%; 
+} 
+
+#wow-modal-window-1{
+	width:290px; 
+	padding:10px; 
+	border: 0px solid #000000; 
+	z-index:99999; 
+	position: fixed; 
+	top:20%;	
+	left:0%;
+	right:0%;
+	border-radius:5px; 
+	margin: auto; 
+	display: none;	
+	height: auto;
+	margin-bottom:40px;	background: #ffffff;	
+}
+#wow-modal-close-1 {
+	position: absolute; 
+	top: -15px; 
+	right: -15px;	 
+	font-size: 14px; 	
+	font-weight: bold; 
+	cursor:pointer; 
+	display: none; 
+} 
+
+#close-circle-1{
+	color: #000000;
+}
+#close-times-1{
+	color: #ffffff;
+}
+.wow-modal-botton-1 {
+	text-decoration: none;
+	color: white;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+  -ms-border-radius: 4px;
+	border-radius: 4px;
+	padding: 14px 14px 12px;
+	line-height: 14px;
+	float: none;
+	text-shadow: none;
+	cursor:pointer;
+	z-index: 9999;
+	background: #383838; 
+}
+.wow-modal-botton-1:hover {	
+	background: #797979; 
+}
+
+@media only screen and (max-width: 1024px){
+#wow-modal-window-1 {
+    max-width:85%;
+}
+}
