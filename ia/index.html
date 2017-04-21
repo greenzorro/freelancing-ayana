@@ -167,21 +167,34 @@ img.emoji {
 	#index-submit {
 		display: block;
 		position:absolute;
-		top: 100px;
+		top: 150px;
 		left: auto;
 		background: rgb(1, 33, 71);;
 		right: 0%;
-		padding:10px 0 10px 10px;
+		padding:10px 0 20px 10px;
 		z-index: 5;
+		display: none;
+	}
+
+	.mktoLabel {
+		min-height:30px;
 	}
 
 	.container {
 		position: relative;
 	}
 
+	.mktoButtonRow{
+		margin-left: 0 !important; 
+		display: block !important;
+		text-align: center !important;
+		padding-right: 20px !important;
+	}
+
 	@media screen and (max-width: 600px) {
 		#index-submit {
 			position: static;
+			margin-left: -15px; margin-right: -15px; padding: 10px 10px 10px 0;
 		}
 	}
 </style>
@@ -716,7 +729,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					e.c = jQuery('#rev_slider_1_1');
 					e.responsiveLevels = [1240,1024,778,480];
 					e.gridwidth = [1240,1024,778,480];
-					e.gridheight = [600,600,600,960];
+					e.gridheight = [800,800,800,960];
 							
 					e.sliderLayout = "fullwidth";
 					if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})
@@ -745,7 +758,7 @@ jsFileLocation:"//www.iauniversities.com/wp-content/plugins/revslider/public/ass
 						responsiveLevels:[1240,1024,778,480],
 						visibilityLevels:[1240,1024,778,480],
 						gridwidth:[1240,1024,778,480],
-						gridheight:[600,600,600,960],
+						gridheight:[800,800,800,960],
 						lazyType:"none",
 						shadow:0,
 						spinner:"off",
@@ -3205,6 +3218,7 @@ jQuery(".rev_slider_nav.rev_slider_1.rev_slide_" + data.slideIndex).addClass("ac
 		</div>
 	</footer><!-- /.footer -->
 
+  <div id="go_top"><a href="#"></a></div>
 
 </div><!-- /Wrapper -->
 
@@ -3226,6 +3240,7 @@ jQuery(".rev_slider_nav.rev_slider_1.rev_slide_" + data.slideIndex).addClass("ac
 <link rel='stylesheet' id='owl_transitions_css-css'  href='http://www.iauniversities.com/wp-content/plugins/slide-anything/owl-carousel/owl.transitions.css' type='text/css' media='all' />
 <link rel='stylesheet' id='wow-modal-window-style-1-css'  href='http://www.iauniversities.com/wp-content/plugins/modal-window/asset/modal/css/style-1.css' type='text/css' media='all' />
 <link rel='stylesheet' id='main-style-wow-modal-css'  href='http://www.iauniversities.com/wp-content/plugins/modal-window/public/css/style.css' type='text/css' media='all' />
+<link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
 <script type='text/javascript' src='http://www.iauniversities.com/wp-content/themes/smarty/assets/js/vendor/bootstrap.min.js'></script>
 <script type='text/javascript' src='http://www.iauniversities.com/wp-content/themes/smarty/assets/js/vendor/select2/js/select2.min.js'></script>
 <script type='text/javascript' src='http://www.iauniversities.com/wp-content/themes/smarty/assets/js/custom.js'></script>
@@ -3242,6 +3257,7 @@ jQuery(".rev_slider_nav.rev_slider_1.rev_slide_" + data.slideIndex).addClass("ac
 <script src="./Forms2-transform.js"></script>
 <script>
 MktoForms2.whenReady(function (form){
+	document.getElementById('index-submit').style.display = "block";
  //Add an onSuccess handler
   form.onSuccess(function(values, followUpUrl){
    //get the form's jQuery element and hide it
