@@ -47,19 +47,39 @@ h2.title {
 @media only screen and (min-width: 768px) {
   h2.title {
     font-size: 0.3rem; } }
-.header h1 {
-  height: 100%; }
-  .header h1 img {
+.header {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap; }
+  .header h1 {
     height: 100%; }
+    .header h1 img {
+      height: 100%; }
+  .header a {
+    display: block;
+    background: #D50032;
+    border-radius: 0.04rem;
+    color: #fff; }
 
 @media only screen and (max-width: 767px) {
   .header {
     height: calc(0.48rem - 0.1rem);
-    padding: 0.1rem 0.2rem; } }
+    padding: 0.1rem 0.2rem; }
+    .header a {
+      padding: 0.05rem 0.1rem;
+      font-size: 0.12rem; } }
 @media only screen and (min-width: 768px) {
   .header {
     height: calc(0.72rem - 0.15rem);
-    padding: 0.15rem 1rem; } }
+    padding: 0.15rem 1rem; }
+    .header a {
+      padding: 0.1rem 0.2rem;
+      font-size: 0.16rem; } }
 .sign_up {
   background-color: #001E62;
   background-repeat: no-repeat; }
@@ -268,7 +288,7 @@ h2.title {
             height: 0.36rem;
             line-height: 0.36rem;
             margin: 0 0.15rem 0.1rem 0;
-            border-radius: 6px;
+            border-radius: 0.06rem;
             text-align: center;
             color: #fff;
             -webkit-transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
@@ -284,6 +304,7 @@ h2.title {
       margin: 0.4rem 0 0;
       text-align: center; }
       .intro .degrees img {
+        width: 100%;
         max-width: 10rem; }
       .intro .degrees p {
         font-size: 0.18rem; } }
@@ -671,6 +692,97 @@ h2.title {
         transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95); }
         .more_info .bg_wrap a:hover {
           background-color: rgba(255, 255, 255, 0.3); } }
+.lead_form {
+  background: url(../images/lead_form.jpg) no-repeat center center;
+  background-size: cover; }
+  .lead_form .bg_wrap {
+    padding: 0.5rem 0.2rem;
+    background: rgba(250, 250, 250, 0.9); }
+    .lead_form .bg_wrap .form {
+      overflow: hidden;
+      background: #fff;
+      border-radius: 0.04rem; }
+      .lead_form .bg_wrap .form .stripe {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap; }
+        .lead_form .bg_wrap .form .stripe i {
+          -webkit-flex: 1 1 25%;
+          flex: 1 1 25%;
+          display: block;
+          height: 0.05rem; }
+          .lead_form .bg_wrap .form .stripe i:nth-child(odd) {
+            background-color: #D50032; }
+          .lead_form .bg_wrap .form .stripe i:nth-child(even) {
+            background-color: #001E62; }
+      .lead_form .bg_wrap .form h2 {
+        text-align: center;
+        color: #001E62; }
+      .lead_form .bg_wrap .form .row {
+        margin: 0.12rem 0.2rem;
+        border: 1px solid #ccc;
+        border-radius: 0.04rem; }
+        .lead_form .bg_wrap .form .row input {
+          width: calc(100% - 0.3rem);
+          height: 0.2rem;
+          line-height: 0.2rem;
+          padding: 0.06rem 0.15rem;
+          font-size: 0.14rem;
+          color: #333;
+          position: relative;
+          z-index: 2; }
+        .lead_form .bg_wrap .form .row select {
+          width: calc(100% - 0.3rem);
+          height: 0.19rem;
+          line-height: 0.19rem;
+          padding: 0.06rem 0.15rem;
+          border: 0;
+          background: transparent;
+          appearance: none;
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          font-size: 0.14rem;
+          color: #333;
+          position: relative;
+          z-index: 2; }
+      .lead_form .bg_wrap .form .submit {
+        display: block;
+        width: 2.1rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        margin: 0.25rem auto;
+        background: #D50032;
+        border-radius: 0.04rem;
+        font-size: 0.16rem;
+        color: #fff;
+        text-align: center; }
+
+@media only screen and (max-width: 767px) {
+  .lead_form .form h2 {
+    margin: 0.2rem 0;
+    font-size: 0.16rem; } }
+@media only screen and (min-width: 768px) {
+  .lead_form .form {
+    max-width: 3.8rem;
+    margin: 0 auto; }
+    .lead_form .form h2 {
+      margin: 0.3rem 0;
+      font-size: 0.24rem; }
+    .lead_form .form .row input, .lead_form .form .row select {
+      padding: 0.11rem 0.15rem; }
+    .lead_form .form .submit {
+      -webkit-transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
+      transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
+      background-color: #D50032; }
+      .lead_form .form .submit:visited {
+        background-color: #D50032; }
+      .lead_form .form .submit:hover {
+        background-color: #ff2256; }
+      .lead_form .form .submit:active {
+        background-color: #D50032; } }
 .footer {
   padding: 0.2rem 0;
   text-align: center; }
