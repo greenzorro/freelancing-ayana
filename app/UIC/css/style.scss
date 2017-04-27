@@ -207,9 +207,7 @@ h2.title {
 //*********************************************************************//
 
 .sign_up {
-	// background-color: $accent;
 	background-color: $black;
-	background-repeat: no-repeat;
 	position: relative;
 	.video_wrap {
 		width: 100%;
@@ -323,8 +321,6 @@ h2.title {
 // phone
 @media only screen and (max-width: $phone-max){
 	.sign_up {
-		background-position: center top;
-		background-size: 300%;
 		.bg_wrap {
 			padding: 0 0.2rem;
 			.instruction {
@@ -356,8 +352,6 @@ h2.title {
 @media only screen and (min-width: $pad-min){
 	.sign_up {
 		height: calc(100vh - (0.72rem - 0.15rem));
-		background-position: center center;
-		background-size: cover;
 		.bg_wrap {
 			@include display-flex ();
 			@include justify-content (space-around);

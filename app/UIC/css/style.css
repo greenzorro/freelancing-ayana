@@ -91,7 +91,6 @@ h2.title {
       font-size: 0.16rem; } }
 .sign_up {
   background-color: #333;
-  background-repeat: no-repeat;
   position: relative; }
   .sign_up .video_wrap {
     width: 100%;
@@ -191,30 +190,25 @@ h2.title {
         text-align: center; }
 
 @media only screen and (max-width: 767px) {
-  .sign_up {
-    background-position: center top;
-    background-size: 300%; }
-    .sign_up .bg_wrap {
-      padding: 0 0.2rem; }
-      .sign_up .bg_wrap .instruction {
-        padding: 0.4rem 0; }
-        .sign_up .bg_wrap .instruction h1 {
-          font-size: 0.24rem; }
-          .sign_up .bg_wrap .instruction h1:after {
-            margin: 0.1rem 0 0; }
-        .sign_up .bg_wrap .instruction p {
-          margin: 0.3rem 0 0.1rem;
-          font-size: 0.12rem; }
-        .sign_up .bg_wrap .instruction span {
-          font-size: 0.12rem; }
-      .sign_up .bg_wrap .form h2 {
-        margin: 0.2rem 0;
-        font-size: 0.16rem; } }
+  .sign_up .bg_wrap {
+    padding: 0 0.2rem; }
+    .sign_up .bg_wrap .instruction {
+      padding: 0.4rem 0; }
+      .sign_up .bg_wrap .instruction h1 {
+        font-size: 0.24rem; }
+        .sign_up .bg_wrap .instruction h1:after {
+          margin: 0.1rem 0 0; }
+      .sign_up .bg_wrap .instruction p {
+        margin: 0.3rem 0 0.1rem;
+        font-size: 0.12rem; }
+      .sign_up .bg_wrap .instruction span {
+        font-size: 0.12rem; }
+    .sign_up .bg_wrap .form h2 {
+      margin: 0.2rem 0;
+      font-size: 0.16rem; } }
 @media only screen and (min-width: 768px) {
   .sign_up {
-    height: calc(100vh - (0.72rem - 0.15rem));
-    background-position: center center;
-    background-size: cover; }
+    height: calc(100vh - (0.72rem - 0.15rem)); }
     .sign_up .bg_wrap {
       display: -webkit-flex;
       display: flex;
