@@ -230,6 +230,7 @@ h2.title {
 		}
 	}
 	.bg_wrap {
+		height: 100%;
 		background-color: $accent2;
 		position: relative;
 		z-index: 2;
@@ -324,9 +325,9 @@ h2.title {
 		background-position: center top;
 		background-size: 300%;
 		.bg_wrap {
-			padding: 0.4rem 0.2rem;
+			padding: 0 0.2rem;
 			.instruction {
-				margin: 0 0 0.4rem;
+				padding: 0.4rem 0;
 				h1 {
 					font-size: 0.24rem;
 					&:after {
@@ -353,6 +354,7 @@ h2.title {
 // pad and pc
 @media only screen and (min-width: $pad-min){
 	.sign_up {
+		height: calc(100vh - (0.72rem - 0.15rem));
 		background-position: center center;
 		background-size: cover;
 		.bg_wrap {
@@ -360,7 +362,7 @@ h2.title {
 			@include justify-content (space-around);
 			@include flex-flow (row wrap);
 			@include align-items (center);
-			padding: 0.4rem 10%;
+			padding: 0 10%;
 			.instruction {
 				@include flex (0 1 50%);
 				h1 {

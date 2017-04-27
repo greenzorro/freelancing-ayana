@@ -111,6 +111,7 @@ h2.title {
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); }
   .sign_up .bg_wrap {
+    height: 100%;
     background-color: rgba(0, 30, 98, 0.7);
     position: relative;
     z-index: 2; }
@@ -193,9 +194,9 @@ h2.title {
     background-position: center top;
     background-size: 300%; }
     .sign_up .bg_wrap {
-      padding: 0.4rem 0.2rem; }
+      padding: 0 0.2rem; }
       .sign_up .bg_wrap .instruction {
-        margin: 0 0 0.4rem; }
+        padding: 0.4rem 0; }
         .sign_up .bg_wrap .instruction h1 {
           font-size: 0.24rem; }
           .sign_up .bg_wrap .instruction h1:after {
@@ -210,6 +211,7 @@ h2.title {
         font-size: 0.16rem; } }
 @media only screen and (min-width: 768px) {
   .sign_up {
+    height: calc(100vh - (0.72rem - 0.15rem));
     background-position: center center;
     background-size: cover; }
     .sign_up .bg_wrap {
@@ -221,7 +223,7 @@ h2.title {
       flex-flow: row wrap;
       -webkit-align-items: center;
       align-items: center;
-      padding: 0.4rem 10%; }
+      padding: 0 10%; }
       .sign_up .bg_wrap .instruction {
         -webkit-flex: 0 1 50%;
         flex: 0 1 50%; }
