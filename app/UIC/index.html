@@ -40,12 +40,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 <!-- sign_up -->
-<div class="sign_up" style="background-image: url(images/sign_up.jpg)">
+<div class="sign_up" style="/*background-image: url(images/sign_up.jpg)*/">
+	<div class="video_wrap">
+		<video autoplay loop muted preload>
+			<source src="images/video.webm" type="video/webm">
+			<source src="images/video.mp4" type="video/mp4">
+		</video>
+	</div>
 	<div class="bg_wrap">
 		<div class="instruction">
 			<h1>UIC International</h1>
 			<p>热烈欢迎! 伊利诺伊大学芝加哥分校专门为国际学生提供了国际大一课程。</p>
 		</div>
+		<!--
 		<div class="form">
 			<span class="stripe"><i></i><i></i><i></i><i></i></span>
 			<h2>免费申请</h2>
@@ -93,6 +100,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<a class="submit" href="javascript:;">立即联系招生官</a>
 			</form>
 		</div>
+		-->
 	</div>
 </div>
 <!-- sign_up -->
@@ -256,54 +264,105 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 <!-- lead_form -->
-<section class="lead_form" id="lead_form">
+<section class="lead_form" id="lead_form" style="background-image: url(images/lead_form.jpg);">
 	<div class="bg_wrap">
-		<div class="form">
+		<div class="form tab_switch_fade tab_switch">
 			<span class="stripe"><i></i><i></i><i></i><i></i></span>
 			<h2>免费申请</h2>
-			<form id="form">
-				<div class="row">
-					<input type="text" placeholder="请输入名" />
-				</div>
-				<div class="row">
-					<input type="text" placeholder="请输入姓" />
-				</div>
-				<div class="row">
-					<input type="text" placeholder="请输入电子邮箱" />
-				</div>
-				<div class="row">
-					<select>
-						<option>请选择国际呼叫代码</option>
-						<option>option1</option>
-						<option>option2</option>
-					</select>
-				</div>
-				<div class="row">
-					<input type="text" placeholder="请输入手机号码" />
-				</div>
-				<div class="row">
-					<select>
-						<option>请选择居住国</option>
-						<option>option1</option>
-						<option>option2</option>
-					</select>
-				</div>
-				<div class="row">
-					<select>
-						<option>请选择学位类型</option>
-						<option>option1</option>
-						<option>option2</option>
-					</select>
-				</div>
-				<div class="row">
-					<select>
-						<option>请选择开学时间</option>
-						<option>option1</option>
-						<option>option2</option>
-					</select>
-				</div>
-				<a class="submit" href="javascript:;">立即联系招生官</a>
-			</form>
+			<div>
+				<a class="current switcher" href="javascript:;">switcher1</a>
+				<a class="switcher" href="javascript:;">switcher2</a>
+			</div>
+			<div class="current_tab switch_tab">
+				<form id="form1">
+					<div class="row">
+						<input type="text" placeholder="请输入名" />
+					</div>
+					<div class="row">
+						<input type="text" placeholder="请输入姓" />
+					</div>
+					<div class="row">
+						<input type="text" placeholder="请输入电子邮箱" />
+					</div>
+					<div class="row">
+						<select>
+							<option>请选择国际呼叫代码</option>
+							<option>option1</option>
+							<option>option2</option>
+						</select>
+					</div>
+					<div class="row">
+						<input type="text" placeholder="请输入手机号码" />
+					</div>
+					<div class="row">
+						<select>
+							<option>请选择居住国</option>
+							<option>option1</option>
+							<option>option2</option>
+						</select>
+					</div>
+					<div class="row">
+						<select>
+							<option>请选择学位类型</option>
+							<option>option1</option>
+							<option>option2</option>
+						</select>
+					</div>
+					<div class="row">
+						<select>
+							<option>请选择开学时间</option>
+							<option>option1</option>
+							<option>option2</option>
+						</select>
+					</div>
+					<a class="submit" href="javascript:;">立即联系招生官</a>
+				</form>
+			</div>
+			<div class="switch_tab">
+				<form id="form2">
+					<div class="row">
+						<input type="text" placeholder="请输入名" />
+					</div>
+					<div class="row">
+						<input type="text" placeholder="请输入姓" />
+					</div>
+					<div class="row">
+						<input type="text" placeholder="请输入电子邮箱" />
+					</div>
+					<div class="row">
+						<select>
+							<option>请选择国际呼叫代码</option>
+							<option>option1</option>
+							<option>option2</option>
+						</select>
+					</div>
+					<div class="row">
+						<input type="text" placeholder="请输入手机号码" />
+					</div>
+					<div class="row">
+						<select>
+							<option>请选择居住国</option>
+							<option>option1</option>
+							<option>option2</option>
+						</select>
+					</div>
+					<div class="row">
+						<select>
+							<option>请选择学位类型</option>
+							<option>option1</option>
+							<option>option2</option>
+						</select>
+					</div>
+					<div class="row">
+						<select>
+							<option>请选择开学时间</option>
+							<option>option1</option>
+							<option>option2</option>
+						</select>
+					</div>
+					<a class="submit" href="javascript:;">立即联系招生官</a>
+				</form>
+			</div>
 		</div>
 	</div>
 </section>

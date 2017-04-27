@@ -146,6 +146,11 @@ h2.title {
 	}
 }
 
+// tab
+.tab_switch .current { color: red; }
+.tab_switch_fade .switch_tab { display: none; }
+.tab_switch_fade .current_tab { display: block; }
+
 
 
 
@@ -202,10 +207,32 @@ h2.title {
 //*********************************************************************//
 
 .sign_up {
-	background-color: $accent;
+	// background-color: $accent;
+	background-color: $black;
 	background-repeat: no-repeat;
+	position: relative;
+	.video_wrap {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 1;
+		video {
+			display: block;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			@include transform(translate(-50%, -50%));
+		}
+	}
 	.bg_wrap {
 		background-color: $accent2;
+		position: relative;
+		z-index: 2;
 		.instruction {
 			color: $white;
 			h1 {
@@ -973,7 +1000,8 @@ h2.title {
 //*********************************************************************//
 
 .lead_form {
-	background: url(../images/lead_form.jpg) no-repeat center center;
+	background-repeat: no-repeat;
+	background-position: center center;
 	background-size: cover;
 	.bg_wrap {
 		padding: 0.5rem 0.2rem;

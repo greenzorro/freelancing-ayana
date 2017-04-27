@@ -1,20 +1,21 @@
 $(function () {
 
-	tabSwitch();  //tab切换
+	tabSwitch();  //tab
+	videoResize();  //video resize
 
 })
 
 
 
 
-// tab切换
+// tab
 function tabSwitch () {
 	$(".tab_switch_fade").each(function () {
 		var switcher = $(this).find(".switcher");
 		var tab = $(this).find(".switch_tab");
-		if (switcher.length == tab.length) {  //只有标签与内容数量相等时才触发效果
+		if (switcher.length == tab.length) {
 			$(this).on("click",".switcher",function () {
-				var num = $(this).index();  //index内可适当加上选择器
+				var num = $(this).index();
 				switcher.removeClass("current");
 				$(this).addClass("current");
 				tab.removeClass("current_tab");
@@ -27,3 +28,31 @@ function tabSwitch () {
 	})
 }
 
+
+// video resize
+function videoResize () {
+	window.onload = function() {
+		setVideoSize();
+    };
+	window.onresize = function() {
+		setVideoSize();
+    };
+	function setVideoSize () {
+		if ($(".video_wrap video").length > 0) {
+			var wrapWidth, wrapHeight, videoWidth, videoHeight;
+			var video = $(".video_wrap video");
+			wrapWidth = $(".video_wrap").width();
+			wrapHeight = $(".video_wrap").height();
+			videoWidth = $(".video_wrap video").width();
+			videoHeight = $(".video_wrap video").height();
+			video.width("auto");
+			video.height("auto");
+			if (wrapWidth/wrapHeight > videoWidth/videoHeight) {
+				video.width("100%");
+			}
+			else {
+				video.height("100%");
+			}
+		}
+	}
+}
