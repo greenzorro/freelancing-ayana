@@ -105,6 +105,7 @@ h2.title {
     z-index: 1; }
     .sign_up .video_wrap video {
       display: block;
+      width: 130%;
       position: absolute;
       left: 50%;
       top: 50%;
