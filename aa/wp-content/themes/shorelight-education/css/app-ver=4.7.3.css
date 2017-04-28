@@ -3384,6 +3384,7 @@ h5 .link-icon svg, h6 .link-icon svg {
     right: 10px; } }
 
 #page-header {
+	width: 100%;
   position: relative;
   height: 502px; }
 
@@ -6915,6 +6916,7 @@ table.stacktable.stack-table-card-fix.small-only tr .st-key {
 	background: #eee;
 }
 .cola_table_info .cola_table_wrap th {
+	text-align: center;
 }
 .cola_table_info .cola_table_wrap td {
 	background: none;
