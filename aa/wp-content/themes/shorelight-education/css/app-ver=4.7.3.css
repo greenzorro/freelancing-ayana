@@ -6970,7 +6970,12 @@ table.stacktable.stack-table-card-fix.small-only tr .st-key {
 		max-width: 930px;
 	}
 }
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1399px) {
+	.cola_table_info .cola_row {
+		max-width: 1050px;
+	}
+}
+@media (min-width: 1400px) {
 	.cola_table_info .cola_row {
 		max-width: 1300px;
 	}
