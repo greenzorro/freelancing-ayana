@@ -4583,7 +4583,7 @@ h5 .link-icon svg, h6 .link-icon svg {
   padding: 0; }
 
 .section.section-small-spacing {
-  padding-top: 30px;
+  /*padding-top: 30px;*/
   padding-bottom: 30px; }
 
 @media only screen and (max-width: 992px) {
@@ -6886,12 +6886,104 @@ table.stacktable.stack-table-card-fix.small-only tr .st-key {
 /*# sourceMappingURL=app.css.map */
 
 
+/*width wrap cola*/
+@media (max-width: 480px) {
+	.cola_width_wrap {
+		padding: 0 10px;
+	}
+}
+@media (min-width: 481px) and (max-width: 767px) {
+	.cola_width_wrap {
+		padding: 0 20px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.cola_width_wrap {
+		max-width: 710px;
+		margin: 0 auto;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.cola_width_wrap {
+		max-width: 930px;
+		margin: 0 auto;
+	}
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+	.cola_width_wrap {
+		max-width: 1050px;
+		margin: 0 auto;
+	}
+}
+@media (min-width: 1400px) {
+	.cola_width_wrap {
+		max-width: 1300px;
+		margin: 0 auto;
+	}
+}
 
+
+/*schools cola*/
+.cola_schools {
+	background: #F5F7F7;
+}
+.cola_schools h2 {
+	padding: 0 0 10px;
+	font-size: 18px;
+}
+.cola_schools ul {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
+}
+.cola_schools li {
+	line-height: 1.2;
+	background: #fff;
+	padding: 10px 15px;
+	margin-bottom: 5px;
+	list-style: none;
+}
+.cola_schools li p {
+	margin: 0;
+	color: #CA0319;
+	font-size: 14px;
+}
+.cola_schools li span {
+	color: #999;
+	font-size: 12px;
+}
+@media (max-width: 767px) {
+	.cola_schools {
+		padding: 30px 0;
+	}
+}
+@media (min-width: 768px) {
+	.cola_schools {
+		padding: 40px 0;
+	}
+}
+@media (max-width: 767px) {
+	.cola_schools li {
+		flex: 0 1 100%;
+	}
+}
+@media (min-width: 768px) and (max-width: 1399px) {
+	.cola_schools li {
+		flex: 0 1 49.7%;
+	}
+}
+@media (min-width: 1400px) {
+	.cola_schools li {
+		flex: 0 1 19.8%;
+	}
+}
+
+
+/*table cola*/
 .cola_table_info {
 	background: #fff;
-}
-.cola_table_info .cola_row {
-	padding: 10px 0;
 }
 .cola_table_info .cola_table_wrap {
 	width: 100%;
@@ -6930,7 +7022,7 @@ table.stacktable.stack-table-card-fix.small-only tr .st-key {
 }
 @media (max-width: 767px) {
 	.cola_table_info {
-		padding: 30px 10px;
+		padding: 30px 0;
 	}
 	.cola_table_info .right {
 		height: 100px;
@@ -6939,13 +7031,13 @@ table.stacktable.stack-table-card-fix.small-only tr .st-key {
 }
 @media (min-width: 768px) {
 	.cola_table_info {
-		padding: 40px 26px;
+		padding: 40px 0;
 	}
-	.cola_table_info .cola_row {
+	.cola_table_info .cola_width_wrap {
 		width: 100%;
 		margin: 0 auto;
 	}
-	.cola_table_info .cola_row {
+	.cola_table_info .cola_width_wrap {
 		display: -webkit-flex;
 		display: flex;
 		-webkit-flex-flow: row wrap;
@@ -6963,20 +7055,5 @@ table.stacktable.stack-table-card-fix.small-only tr .st-key {
 		-webkit-flex: 0 1 20%;
 		flex: 0 1 20%;
 		width: 100px;
-	}
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-	.cola_table_info .cola_row {
-		max-width: 930px;
-	}
-}
-@media (min-width: 1200px) and (max-width: 1399px) {
-	.cola_table_info .cola_row {
-		max-width: 1050px;
-	}
-}
-@media (min-width: 1400px) {
-	.cola_table_info .cola_row {
-		max-width: 1300px;
 	}
 }
