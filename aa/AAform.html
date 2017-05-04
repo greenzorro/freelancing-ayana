@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+
+<script src="//app-ab20.marketo.com/js/forms2/js/forms2.min.js"></script>
+<form id="mktoForm_1502" style="display:none" ></form>
+姓<input type="text" id="first_name"/><br>
+名<input type="text" id="last_name"/><br>
+邮箱<input type="text" id="e-mail"/><br>
+电话<input type="text" id="mobile-phone"/><br>
+留言<textarea  id="comments"></textarea><br>
+</select><br>
+<button id="btn1" >提交</button>
+
+<script>
+    MktoForms2.loadForm("//app-ab20.marketo.com", "553-ZUA-407", 1502);
+    var btn = document.getElementById("btn1");
+    btn.onclick = function() {
+    // When the button is clicked, get the form object and submit it
+    MktoForms2.whenReady(function (form) {
+        var firstname = document.getElementById("first_name").value;
+        var lastname = document.getElementById("last_name").value;
+        var phone = document.getElementById("mobile-phone").value;
+        var email = document.getElementById("e-mail").value;
+        var question = document.getElementById("comments").value;
+        //var level = document.getElementById("lev").value;
+        //var start_date = document.getElementById("start_date").value;
+        form.vals({ "Country":"China"});
+        form.vals({ "internationalCallingCode":"+86"});
+        form.vals({ "FirstName":firstname});
+        form.vals({ "LastName":lastname});
+        form.vals({ "Email":email});
+        form.vals({ "MobilePhone":phone});
+        //form.vals({"level":level});
+        //form.vals({"startDate":start_date});
+        form.vals({ "question":question});
+        form.vals({"hregion":"china"});
+        form.submit();
+    });
+};
+</script>
+
+</body>
+</html>
+
