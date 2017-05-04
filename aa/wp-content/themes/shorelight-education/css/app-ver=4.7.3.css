@@ -6886,6 +6886,18 @@ table.stacktable.stack-table-card-fix.small-only tr .st-key {
 /*# sourceMappingURL=app.css.map */
 
 
+.clearfix {
+	zoom:1;
+}
+.clearfix:after {
+	clear:both;
+	display:block;
+	height:0;
+	content:"";
+	visibility:hidden;
+}
+
+
 /*width wrap cola*/
 @media (max-width: 480px) {
 	.cola_width_wrap {
@@ -6924,6 +6936,9 @@ table.stacktable.stack-table-card-fix.small-only tr .st-key {
 
 
 /*reasons cola*/
+.cola_reasons {
+	padding-bottom: 0 !important;
+}
 .cola_reasons .col-md-4 {
 	margin-bottom: 15px;
 	text-align: center;
@@ -7020,7 +7035,7 @@ table.stacktable.stack-table-card-fix.small-only tr .st-key {
 }
 .cola_table_info .cola_table_wrap h2 {
 	color: #08358B;
-	font-size: 16px;
+	font-size: 24px;
 	font-weight: bold;
 }
 .cola_table_info .cola_table_wrap table {
@@ -7045,6 +7060,7 @@ table.stacktable.stack-table-card-fix.small-only tr .st-key {
 	text-align: center;
 }
 .cola_table_info .cola_table_wrap p {
+	margin-bottom: 30px;
 }
 .cola_table_info .right {
 	background: url(../images/image1.png) no-repeat center center;
@@ -7120,6 +7136,17 @@ table.stacktable.stack-table-card-fix.small-only tr .st-key {
       .cola_lead_form .bg_wrap .form h2 {
         text-align: center;
         color: #14477D; }
+      .cola_lead_form .bg_wrap .form .row_groups {
+      	margin-bottom: -12px;
+      }
+      .cola_lead_form .bg_wrap .form .row_groups .row {
+      	float: left;
+      	width: calc((100% - 50px)/2);
+      	margin: 12px 0 12px 10px;
+      }
+      .cola_lead_form .bg_wrap .form .row_groups .row:first-of-type {
+      	margin: 12px 0 12px 20px;
+      }
       .cola_lead_form .bg_wrap .form .row {
         margin: 12px 20px;
         border: 1px solid #ccc;
@@ -7208,3 +7235,18 @@ table.stacktable.stack-table-card-fix.small-only tr .st-key {
         background-color: #ff2256; }
       .cola_lead_form .form .submit:active {
         background-color: #CA0319; } }
+
+
+/*others cola*/
+.cola-h2 {
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 32px; }
+
+@media only screen and (max-width: 992px) {
+  .cola-h2 {
+    font-size: 30px; } }
+
+@media (max-width: 480px) {
+  .cola-h2 {
+    font-size: 20px; } }
