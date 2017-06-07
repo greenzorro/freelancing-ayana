@@ -12,12 +12,28 @@
 }
 
 /*form style*/
+.mktoForm input.mktoField,
+.mktoForm select.mktoField {
+	text-indent: 5px !important;
+}
+.mktoButtonRow {
+	display: inline-block !important;
+}
+fieldset {
+	width: 300px !important;
+}
 fieldset .mktoFormRow {
-	width: 60px !important;
+	width: 65px !important;
 }
-fieldset .mktoFieldWrap label.mktoLabel.mktoHasWidth {
-	width: 60px !important;
+fieldset label.mktoLabel.mktoHasWidth {
+	width: 65px !important;
 }
-fieldset .mktoFieldWrap label.mktoLabel {
-	min-height: 32px;
+.home .mktoButtonRow {
+	width: 100%;
+}
+@media only screen and (min-width: 737px) {
+	.home #index-submit {
+		max-width: 280px;
+		padding: 10px 0;
+	}
 }
