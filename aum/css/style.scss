@@ -732,62 +732,6 @@ h2.title {
 
 
 //*********************************************************************//
-//                               more_info                             //
-//*********************************************************************//
-
-// phone
-@media only screen and (max-width: $phone-max){
-	.more_info {
-		display: none;
-	}
-}
-// pad and pc
-@media only screen and (min-width: $pad-min){
-	.more_info {
-		background-position: center center;
-		background-size: cover;
-		.bg_wrap {
-			padding: 1rem 0;
-			background-color: $accent2;
-			text-align: center;
-			h2.title {
-				color: $white;
-				&:after {
-					background: $white;
-				}
-			}
-			p {
-				width: 4.4rem;
-				line-height: 0.28rem;
-				margin: 0.3rem auto 0.4rem;
-				text-align: center;
-				font-size: 0.2rem;
-				color: $white;
-			}
-			a {
-				display: inline-block;
-				height: 0.36rem;
-				line-height: 0.36rem;
-				margin: 0 auto;
-				padding: 0 0.15rem;
-				border: 1px solid $white;
-				border-radius: 0.06rem;
-				text-align: center;
-				color: $white;
-				font-size: 0.16rem;
-				@include transition (background-color 0.5s $easing);
-				&:hover {
-					background-color: rgba(255,255,255,0.3);
-				}
-			}
-		}
-	}
-}
-
-
-
-
-//*********************************************************************//
 //                               footer                                //
 //*********************************************************************//
 

@@ -497,43 +497,6 @@ h2.title {
         background-color: #f68562; }
       .buttons div a:active {
         background-color: #F24C1A; } }
-@media only screen and (max-width: 767px) {
-  .more_info {
-    display: none; } }
-@media only screen and (min-width: 768px) {
-  .more_info {
-    background-position: center center;
-    background-size: cover; }
-    .more_info .bg_wrap {
-      padding: 1rem 0;
-      background-color: rgba(18, 17, 33, 0.65);
-      text-align: center; }
-      .more_info .bg_wrap h2.title {
-        color: #fff; }
-        .more_info .bg_wrap h2.title:after {
-          background: #fff; }
-      .more_info .bg_wrap p {
-        width: 4.4rem;
-        line-height: 0.28rem;
-        margin: 0.3rem auto 0.4rem;
-        text-align: center;
-        font-size: 0.2rem;
-        color: #fff; }
-      .more_info .bg_wrap a {
-        display: inline-block;
-        height: 0.36rem;
-        line-height: 0.36rem;
-        margin: 0 auto;
-        padding: 0 0.15rem;
-        border: 1px solid #fff;
-        border-radius: 0.06rem;
-        text-align: center;
-        color: #fff;
-        font-size: 0.16rem;
-        -webkit-transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95);
-        transition: background-color 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95); }
-        .more_info .bg_wrap a:hover {
-          background-color: rgba(255, 255, 255, 0.3); } }
 .footer {
   padding: 0.2rem 0;
   text-align: center; }
