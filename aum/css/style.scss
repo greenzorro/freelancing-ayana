@@ -791,7 +791,7 @@ input, textarea, button {
 	.content {
 		padding: 0.2rem 0;
 		img {
-			display: block;
+			display: none;
 			width: 100%;
 			margin: 0.2rem 0;
 			box-shadow: $shadow;
@@ -802,6 +802,18 @@ input, textarea, button {
 				color: $primary;
 			}
 		}
+	}
+}
+// phone
+@media only screen and (max-width: $phone-max){
+	.require img.mobile {
+		display: block;
+	}
+}
+// pad and pc
+@media only screen and (min-width: $pad-min){
+	.require img.pc {
+		display: block;
 	}
 }
 
@@ -816,10 +828,9 @@ input, textarea, button {
 	.content {
 		padding: 0.2rem 0;
 		img {
-			display: block;
+			display: none;
 			width: 100%;
 			margin: 0.2rem 0;
-			box-shadow: $shadow;
 		}
 		p {
 			margin: 0.2rem 0;
@@ -827,6 +838,18 @@ input, textarea, button {
 				color: $primary;
 			}
 		}
+	}
+}
+// phone
+@media only screen and (max-width: $phone-max){
+	.progress img.mobile {
+		display: block;
+	}
+}
+// pad and pc
+@media only screen and (min-width: $pad-min){
+	.progress img.pc {
+		display: block;
 	}
 }
 

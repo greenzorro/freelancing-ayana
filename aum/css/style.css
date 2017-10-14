@@ -484,7 +484,7 @@ input, textarea, button {
   .require .content {
     padding: 0.2rem 0; }
     .require .content img {
-      display: block;
+      display: none;
       width: 100%;
       margin: 0.2rem 0;
       box-shadow: 0 0.03rem 0.12rem rgba(0, 0, 0, 0.15); }
@@ -493,18 +493,29 @@ input, textarea, button {
       .require .content p em {
         color: #F24C1A; }
 
+@media only screen and (max-width: 767px) {
+  .require img.mobile {
+    display: block; } }
+@media only screen and (min-width: 768px) {
+  .require img.pc {
+    display: block; } }
 .progress .content {
   padding: 0.2rem 0; }
   .progress .content img {
-    display: block;
+    display: none;
     width: 100%;
-    margin: 0.2rem 0;
-    box-shadow: 0 0.03rem 0.12rem rgba(0, 0, 0, 0.15); }
+    margin: 0.2rem 0; }
   .progress .content p {
     margin: 0.2rem 0; }
     .progress .content p em {
       color: #F24C1A; }
 
+@media only screen and (max-width: 767px) {
+  .progress img.mobile {
+    display: block; } }
+@media only screen and (min-width: 768px) {
+  .progress img.pc {
+    display: block; } }
 .howto {
   background: #fafafa; }
   .howto .content {
