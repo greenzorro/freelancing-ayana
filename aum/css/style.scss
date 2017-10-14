@@ -10,6 +10,7 @@ $white: #fff;
 $black: #333;
 $gray_dark: #ccc;
 $gray_light: #fafafa;
+$shadow: 0 0.03rem 0.12rem rgba(0, 0, 0, 0.15);
 $easing: cubic-bezier(0.15, 0.95, 0.41, 0.95);
 
 // responsive break points
@@ -119,29 +120,134 @@ input, textarea, button {
 //                             components                              //
 //*********************************************************************//
 
-// title
-h2.title {
-	text-align: center;
-	color: $primary;
-	&:after {
-		content: "";
-		display: block;
-		width: 0.4rem;
-		height: 0.02rem;
-		margin: 0.1rem auto 0;
-		background: $primary;
-	}
-}
+// layout
 // phone
 @media only screen and (max-width: $phone-max){
-	h2.title {
-		font-size: 0.18rem;
+	.bg_wrap {
+		padding: 0.4rem 0.2rem;
 	}
 }
 // pad and pc
 @media only screen and (min-width: $pad-min){
-	h2.title {
+	.bg_wrap {
+		padding: 0.4rem 10%;
+	}
+}
+
+// title
+.section_title {
+	text-align: center;
+	position: relative;
+	i {
+		display: block;
+		border-radius: 50%;
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translate(-50%, 0);
+		&:before, &:after {
+			content: "";
+			display: block;
+			position: absolute;
+			bottom: 0.03rem;
+		}
+	}
+}
+.dark {
+	color: $black;
+	i {
+		background: $primary;
+		&:before, &:after {
+			background: $primary;
+		}
+	}
+}
+.light {
+	color: $white;
+	i {
+		background: $white;
+		&:before, &:after {
+			background: $white;
+		}
+	}
+}
+// phone
+@media only screen and (max-width: $phone-max){
+	.section_title {
+		padding-bottom: 0.15rem;
+		font-size: 0.16rem;
+		i {
+			width: 0.06rem;
+			height: 0.06rem;
+			&:before, &:after {
+				width: 0.14rem;
+				height: 0.01rem;
+			}
+			&:before {
+				left: -0.2rem;
+			}
+			&:after {
+				right: -0.2rem;
+			}
+		}
+	}
+}
+// pad and pc
+@media only screen and (min-width: $pad-min){
+	.section_title {
+		padding: 0 0 0.2rem;
+		margin: 0.5rem 0;
 		font-size: 0.3rem;
+		i {
+			width: 0.08rem;
+			height: 0.08rem;
+			&:before, &:after {
+				width: 0.28rem;
+				height: 0.02rem;
+			}
+			&:before {
+				left: -0.4rem;
+			}
+			&:after {
+				right: -0.4rem;
+			}
+		}
+	}
+}
+
+// slogen
+.slogen {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	.bg_wrap {
+		background-color: $accent2;
+	}
+}
+.slogen1 {
+	background-image: url(../images/slogen1.jpg);
+}
+.slogen2 {
+	background-image: url(../images/slogen2.jpg);
+}
+.slogen3 {
+	background-image: url(../images/slogen3.jpg);
+}
+.slogen4 {
+	background-image: url(../images/slogen4.jpg);
+}
+// phone
+@media only screen and (max-width: $phone-max){
+	.slogen .bg_wrap {
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+	}
+}
+// pad and pc
+@media only screen and (min-width: $pad-min){
+	.slogen .bg_wrap {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
 	}
 }
 
@@ -278,7 +384,6 @@ h2.title {
 		background-position: center top;
 		background-size: 300%;
 		.bg_wrap {
-			padding: 0.4rem 0.2rem;
 			.instruction {
 				margin: 0 0 0.4rem;
 				h1 {
@@ -314,7 +419,6 @@ h2.title {
 			@include justify-content (space-around);
 			@include flex-flow (row wrap);
 			@include align-items (center);
-			padding: 0.4rem 10%;
 			.instruction {
 				@include flex (0 1 50%);
 				h1 {
@@ -357,83 +461,57 @@ h2.title {
 
 
 //*********************************************************************//
-//                               schedule                              //
+//                                intro                                //
 //*********************************************************************//
 
-.schedule {
-	p {
-		margin: 0 auto;
-		text-align: center;
-		color: $black;
-		&:first-of-type {
-			padding-top: 0.3rem;
+.intro {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	color: $white;
+	.bg_wrap {
+		padding-top: 0.8rem;
+		padding-bottom: 0.8rem;
+		background-color: $accent2;
+		@include display-flex ();
+		@include justify-content (space-between);
+		.text {
+			h2 {
+				padding-bottom: 0.1rem;
+				font-weight:bold;
+			}
 		}
-	}
-	ul {
-		li {
-			header {
-				min-height: 1.3rem;
-				padding: 0 0.3rem;
-				text-align: center;
-				color: $white;
-				@include display-flex ();
-				@include justify-content (center);
-				@include flex-flow (column wrap);
-				h3 {
-					@include flex (0 1 auto);
+		.list {
+			li {
+				i {
+					display: inline-block;
+					border: 0.01rem solid $white;
+					border-radius: 50%;
+					text-align: center;
 				}
-				time {
-					@include flex (0 1 auto);
-					display: block;
-					margin: 0.05rem 0 0;
-				}
-			}
-			&:nth-child(odd) {
-				border: 1px solid $primary;
-				header {
-					background: $primary;
-				}
-			}
-			&:nth-child(even) {
-				border: 1px solid $accent;
-				header {
-					background: $accent;
-				}
-			}
-			span {
-				display: block;
-				color: $black;
-				text-align: center;
 			}
 		}
 	}
 }
 // phone
 @media only screen and (max-width: $phone-max){
-	.schedule {
-		padding: 0.4rem 0 0.2rem;
-		p {
-			padding: 0 0.2rem;
-			font-size: 0.14rem;
-		}
-		ul {
-			padding: 0 0.2rem;
-			li {
-				padding: 0 0 0.25rem;
-				margin: 0.2rem 0;
-				header {
-					h3 {
-						font-size: 0.16rem;
-					}
-					time {
-						font-size: 0.16rem;
-					}
-				}
-				span {
-					padding: 0.15rem 0 0;
-					font-size: 0.14rem;
-					&:first-of-type {
-						padding: 0.25rem 0 0;
+	.intro {
+		background-image: url(../images/intro_mobile.jpg);
+		.bg_wrap {
+			@include flex-flow (column wrap);
+			@include align-items (flex-start);
+			.text {
+				padding-bottom: 0.2rem;
+				h2 { font-size: 0.18rem; }
+				p { font-size: 0.14rem; }
+			}
+			.list {
+				li {
+					i {
+						width: 0.24rem;
+						height: 0.24rem;
+						line-height: 0.24rem;
+						margin: 0.1rem 0.1rem 0.1rem 0;
 					}
 				}
 			}
@@ -442,55 +520,209 @@ h2.title {
 }
 // pad and pc
 @media only screen and (min-width: $pad-min){
-	.schedule {
-		padding: 1rem 0 0;
-		p {
-			max-width: 6.8rem;
-			font-size: 0.2rem;
-		}
-		ul {
-			@include display-flex ();
-			@include justify-content (center);
+	.intro {
+		background-image: url(../images/intro_pc.jpg);
+		.bg_wrap {
 			@include flex-flow (row wrap);
-			padding: 0.7rem 0 0;
-			margin: 0 auto;
-			li {
-				margin: 0 1.2% 0.4rem;
-				padding: 0 0 0.4rem;
-				header {
-					h3 {
-						font-size: 0.2rem;
-					}
-					time {
-						font-size: 0.16rem;
+			@include align-items (center);
+			.text {
+				width: 40%;
+				h2 { font-size: 0.2rem; }
+				p { font-size: 0.16rem; }
+			}
+			.list {
+				width: 50%;
+				li {
+					float: left;
+					margin-right: 0.5rem;
+					i {
+						width: 0.4rem;
+						height: 0.4rem;
+						line-height: 0.4rem;
+						margin: 0.1rem;
 					}
 				}
-				span {
-					padding: 0.25rem 0 0;
+			}
+		}
+	}
+}
+
+
+
+
+//*********************************************************************//
+//                              location                               //
+//*********************************************************************//
+
+.location {
+	color: $white;
+}
+// phone
+@media only screen and (max-width: $phone-max){
+	.location {
+		background: $primary;
+		.bg_wrap {
+			padding-top: 0.3rem;
+			padding-bottom: 0.3rem;
+			.text {
+				h2 {
+					padding: 0.1rem 0;
+					font-size: 0.18rem;
+				}
+				p {
+					padding: 0.1rem 0;
+					font-size: 0.14rem;
+				}
+			}
+			img { width: 100%; }
+		}
+	}
+}
+// pad and pc
+@media only screen and (min-width: $pad-min){
+	.location {
+		background: url(../images/location_pc.jpg) no-repeat center center;
+		background-size: cover;
+		.bg_wrap {
+			padding-top: 1.2rem;
+			padding-bottom: 1.2rem;
+			.text {
+				h2 {
+					padding: 0.2rem;
+					font-size: 0.2rem;
+				}
+				p {
+					padding: 0.2rem;
 					font-size: 0.16rem;
-					&:first-of-type {
-						padding: 0.4rem 0 0;
-					}
+				}
+			}
+			img { display: none; }
+		}
+	}
+}
+
+
+
+
+//*********************************************************************//
+//                              advantage                              //
+//*********************************************************************//
+
+.advantage {
+	ul {
+		padding: 0.5rem 0;
+		@include display-flex ();
+		@include justify-content (space-between);
+		@include align-items (flex-start);
+		@include flex-flow (row wrap);
+		li {
+			padding: 0.2rem 0;
+			text-align: center;
+			h3 {
+				padding: 0.1rem;
+				font-weight: bold;
+			}
+			p {
+				padding: 0 0.1rem;
+			}
+		}
+	}
+}
+// phone
+@media only screen and (max-width: $phone-max){
+	.advantage {
+		ul li {
+			@include flex (1 1 50%);
+			img {
+				width: 0.6rem;
+				height: 0.6rem;
+			}
+			h3 {
+				font-size: 0.16rem;
+			}
+			p {
+				font-size: 0.12rem;
+			}
+		}
+	}
+}
+// pad and pc
+@media only screen and (min-width: $pad-min){
+	.advantage {
+		ul li {
+			@include flex (1 1 25%);
+			img {
+				width: 1.2rem;
+				height: 1.2rem;
+			}
+			h3 {
+				font-size: 0.2rem;
+			}
+			p {
+				font-size: 0.14rem;
+			}
+		}
+	}
+}
+
+
+
+
+//*********************************************************************//
+//                                degree                               //
+//*********************************************************************//
+
+.degree {
+	background: $gray_light;
+	.content {
+		.column {
+			.group {
+				margin: 0.3rem 0;
+				h4 {
+					padding: 0.05rem 0 0.05rem 0.1rem;
+					background: $accent;
+					color: $white;
+				}
+				ul {
+					margin: 0.1rem 0;
+					padding-left: 0.3rem;
+					list-style: disc;
 				}
 			}
 		}
 	}
 }
-// pad
-@media only screen and (min-width: $pad-min) and (max-width: $pad-max){
-	.schedule ul {
-		max-width: 7.6rem;
-		li {
-			@include flex (0 1 3.4rem);
+// phone
+@media only screen and (max-width: $phone-max){
+	.degree {
+		.group {
+			h4 {
+				font-size: 0.14rem;
+			}
+			ul {
+				font-size: 0.12rem;
+			}
 		}
 	}
 }
-// pc
-@media only screen and (min-width: $pc-min){
-	.schedule ul {
-		max-width: 12rem;
-		li {
-			@include flex (0 1 22%);
+// pad and pc
+@media only screen and (min-width: $pad-min){
+	.degree {
+		.content {
+			@include display-flex ();
+			@include justify-content (space-between);
+			@include flex-flow (row wrap);
+			.column {
+				@include flex (0 1 40%);
+			}
+		}
+		.group {
+			h4 {
+				font-size: 0.16rem;
+			}
+			ul {
+				font-size: 0.14rem;
+			}
 		}
 	}
 }
@@ -499,88 +731,124 @@ h2.title {
 
 
 //*********************************************************************//
-//                               apply                                 //
+//                                 fee                                 //
 //*********************************************************************//
 
-.apply {
-	.links {
-		@include display-flex ();
-		@include justify-content (center);
-		@include flex-flow (row wrap);
-		li {
-			@include flex (0 1 auto);
-		}
-	}
-	.dashline {
-		@include display-flex ();
-		@include justify-content (center);
-		@include flex-flow (row wrap);
-		opacity: 0.45;
-		p {
-			@include flex (0 1 auto);
+.fee {
+	.content {
+		.detail {
 			@include display-flex ();
 			@include justify-content (center);
 			@include flex-flow (row wrap);
-			i {
-				@include flex (0 1 auto);
-				display: block;
-				background: $accent;
-				border-radius: 50%;
+			li {
+				@include flex (0 1 4rem);
+				img {
+					display: block;
+					box-shadow: $shadow;
+				}
 			}
-			&:first-of-type i {
-				background: $primary;
+		}
+		p em {
+			color: $primary;
+			font-size: 0.14rem;
+		}
+	}
+}
+// phone
+@media only screen and (max-width: $phone-max){
+	.fee {
+		.content {
+			padding-top: 0.2rem;
+			li {
+				margin: 0.1rem 0;
+				img { width:100%; }
 			}
 		}
 	}
-	.steps {
-		@include display-flex ();
-		@include justify-content (center);
-		@include flex-flow (row wrap);
-		li {
-			opacity: 0.7;
-			span {
-				display: block;
-				margin: 0 auto;
-				background: $accent;
-				border-radius: 50%;
-				text-align: center;
-				color: $white;
-			}
-			i {
-				display: block;
-				margin: 0 auto;
-				background-color: $accent;
-				background-position: center center;
-				background-repeat: no-repeat;
-				background-size: cover;
-				box-shadow: 0 0 0.02rem 0.02rem $white inset;
-			}
-			&:nth-child(1) i {
-				background-image: url(../images/icon_apply_1.png);
-			}
-			&:nth-child(2) i {
-				background-image: url(../images/icon_apply_2.png);
-			}
-			&:nth-child(3) i {
-				background-image: url(../images/icon_apply_3.png);
-			}
-			&:nth-child(4) i {
-				background-image: url(../images/icon_apply_4.png);
-			}
-			p {
-				text-align: center;
-				color: $accent;
+}
+// pad and pc
+@media only screen and (min-width: $pad-min){
+	.fee {
+		.content {
+			padding-bottom: 0.5rem;
+			li {
+				margin: 0.4rem;
+				img { width:4rem; }
 			}
 		}
-		li:first-of-type {
-			opacity: 1;
-			span {
-				background: $primary;
+	}
+}
+
+
+
+
+//*********************************************************************//
+//                               require                               //
+//*********************************************************************//
+
+.require {
+	background: $gray_light;
+	.content {
+		padding: 0.2rem 0;
+		img {
+			display: block;
+			width: 100%;
+			margin: 0.2rem 0;
+			box-shadow: $shadow;
+		}
+		p {
+			margin: 0.2rem 0;
+			em {
+				color: $primary;
 			}
-			i {
-				background-color: $primary;
+		}
+	}
+}
+
+
+
+
+//*********************************************************************//
+//                               progress                              //
+//*********************************************************************//
+
+.progress {
+	.content {
+		padding: 0.2rem 0;
+		img {
+			display: block;
+			width: 100%;
+			margin: 0.2rem 0;
+			box-shadow: $shadow;
+		}
+		p {
+			margin: 0.2rem 0;
+			em {
+				color: $primary;
 			}
-			p {
+		}
+	}
+}
+
+
+
+
+//*********************************************************************//
+//                                howto                                //
+//*********************************************************************//
+
+.howto {
+	background: $gray_light;
+	.content {
+		padding: 0.2rem 0;
+		img {
+			display: none;
+			width: 100%;
+			margin: 0.2rem 0;
+		}
+		p {
+			margin: 0.2rem 0;
+			em {
 				color: $primary;
 			}
 		}
@@ -588,89 +856,56 @@ h2.title {
 }
 // phone
 @media only screen and (max-width: $phone-max){
-	.apply {
-		padding: 0.4rem 0;
-		.links {
-			li {
-				margin: 0.3rem 0.07rem 0.5rem;
-				font-size: 0.14rem;
+	.howto img.mobile {
+		display: block;
+	}
+}
+// pad and pc
+@media only screen and (min-width: $pad-min){
+	.howto img.pc {
+		display: block;
+	}
+}
+
+
+
+
+//*********************************************************************//
+//                                life                                 //
+//*********************************************************************//
+
+.life {
+	color: $white;
+}
+// phone
+@media only screen and (max-width: $phone-max){
+	.life {
+		background: $primary;
+		.text {
+			h2 {
+				font-size: 0.16rem;
 			}
-		}
-		.dashline {
-			@include transform (translate(0, 0.11rem));
-			p {
-				margin: 0 0.25rem;
-				i {
-					width: 0.03rem;
-					height: 0.03rem;
-					margin: 0 0.01rem;
-				}
-			}
-		}
-		.steps {
 			li {
-				@include flex (0 1 0.6rem);
-				margin: 0 0.1rem;
-				span {
-					width: 0.2rem;
-					height: 0.2rem;
-					line-height: 0.2rem;
-					font-size: 0.14rem;
-				}
-				i {
-					width: 0.5rem;
-					height: 0.5rem;
-					margin-top: 0.1rem;
-				}
-				p {
-					font-size: 0.12rem;
-				}
+				padding: 0.1rem 0;
+				font-size: 0.12rem;
 			}
 		}
 	}
 }
 // pad and pc
 @media only screen and (min-width: $pad-min){
-	.apply {
-		padding: 1rem 0;
-		.links {
-			li {
-				margin: 0.7rem 0.35rem 1rem;
-				font-size: 0.24rem;
-				a {
-					@include transition (color 0.5s $easing);
-					@include aColor ($primary);
-				}
+	.life {
+		background: url(../images/life.jpg) no-repeat center center;
+		background-size: cover;
+		.text {
+			float: right;
+			width: 45%;
+			h2 {
+				font-size: 0.3rem;
 			}
-		}
-		.dashline {
-			@include transform (translate(0, 0.22rem));
-			p {
-				margin: 0 0.35rem;
-				i {
-					width: 0.06rem;
-					height: 0.06rem;
-					margin: 0 0.07rem;
-				}
-			}
-		}
-		.steps {
 			li {
-				@include flex (0 1 1.9rem);
-				span {
-					width: 0.4rem;
-					height: 0.4rem;
-					line-height: 0.4rem;
-					font-size: 0.2rem;
-				}
-				i {
-					width: 1rem;
-					height: 1rem;
-					margin-top: 0.2rem;
-				}
-				p {
-					font-size: 0.2rem;
-				}
+				padding: 0.1rem 0;
+				font-size: 0.16rem;
 			}
 		}
 	}
