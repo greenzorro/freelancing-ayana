@@ -594,5 +594,79 @@
 <!-- <script type="text/javascript" src="js/jquery2-latest.js"></script> -->
 <!-- <script type="text/javascript" src="js/functions.js"></script> -->
 
+<script>
+MktoForms2.whenReady(function (form) {
+    form.onSuccess(function(values, followUpUrl) {
+        var url = document.location.href; // get url of the current page
+        
+        // work with region 
+        if (url.search("h_region") > 0 ){ //check if h_region tag exists in the url
+            
+            var urlRegionArr = url.split('h_reg'); // split url by h_reg
+            var urlRegion = urlRegionArr[1].toLowerCase();  // assign part with region to variable
+            
+            //search which region exists and assign value for region variable
+            if ( urlRegion.search("on=us") > 0 ){ 
+                var appendRegion = "north-america"; // US
+            } else if ( urlRegion.search("on=latam") > 0){
+                var appendRegion = "latin-america"; //LATAM
+            } else if ( urlRegion.search("on=mena") > 0 ) {
+                var appendRegion = "middle-east-north-africa"; // MENA
+            } else if ( urlRegion.search("on=cis") > 0 ) {
+                var appendRegion = "russia-central-asia"; // CIS
+            } else if ( urlRegion.search("on=china") > 0 ) {
+                var appendRegion = "east-asia"; // China
+            } else if ( urlRegion.search("on=sasia") > 0 ) {
+                var appendRegion = "south-asia"; // South Asia
+            } else if ( urlRegion.search("on=africa") > 0 ) {
+                var appendRegion = "africa"; // Africa
+            } else if ( urlRegion.search("on=seasia") > 0 ) {
+                var appendRegion = "southeast-asia"; // Soth-East Asia
+            } else {
+                var appendRegion = "europe"; // Europe
+            } 
+
+        } else {
+            var appendRegion = "global"; // assign global if h_region tag doesn't exist in url 
+        }
+
+        // work with domain name
+        /*if ( url.search("marketo") > 0 ){*/
+            var appendSchool = "aum";
+        /*}*/
+
+        //extra parameters 
+        var appendUtmCampaign = "AUM-Follow-Up-Questionnaire";
+        var appendUtmMedium = "form";
+        var appendUtmSource = "aum.edu"; /*change after microsite is created*/
+        var appendSchlAbr = "uta";
+        var appendWebsite = "aum.edu"; /*change after microsite is created*/
+
+
+        // get data from the form and assign to variables 
+        var appendEmail = document.getElementsByName('Email')[0].value ; // email
+        var appendFirstName = document.getElementsByName('FirstName')[0].value ; //first name
+        var appendLastName = document.getElementsByName('LastName')[0].value ; // last name
+        var appendPhone = document.getElementsByName('MobilePhone')[0].value ; // phone
+        var appendICC = document.getElementsByName('internationalCallingCode')[0].value ; // international calling code
+        
+        //work with level
+        var fieldLevel = document.getElementsByName('level')[0].value; 
+        if ( fieldLevel.search("nder") > 0 ){ //check for undergraduate using "nder"
+            var appendLevel = 1;    
+        } else {
+            var appendLevel = 2;
+        }
+
+        location.href = "http://info.shorelight.com/AUM-LP-Follow-Up.html?firstname=" + appendFirstName +"&lastname=" + appendLastName +"&email=" + appendEmail +"&icc=" + appendICC +"&phone=" + appendPhone +"&level=" + appendLevel +"&school=" + appendSchool +"&region=" + appendRegion +"&utm_campaign=" + appendUtmCampaign +"&utm_medium=" + appendUtmMedium +"&utm_source=" + appendUtmSource +"&schlabr=" + appendSchlAbr +"&website=" + appendWebsite;
+        return false;
+    });
+});                                   
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="//munchkin.marketo.net//munchkin.js"></script>
+<script>Munchkin.init('553-ZUA-407', {customName: 'AUM-LP-Landing-Page', wsInfo: 'j0FNcA%3D%3D'});</script>
+<form class="mktoForm mktoHasWidth mktoLayoutAbove" novalidate="novalidate" style="font-family: Verdana, Helvetica, sans-serif; font-size: 14px; color: rgb(51, 51, 51); visibility: hidden; position: absolute; top: -500px; left: -1000px; width: 1280px;"></form>
+
 </body>
 </html>
