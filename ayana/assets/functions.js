@@ -27,6 +27,7 @@
 
         plugin.init();
         pageFunc.quiz();
+        pageFunc.form();
         pageFunc.share();
     });
 
@@ -79,6 +80,11 @@
                         mySwiper.slideTo(5, 300, true);
                     }
                 }
+            })
+        },
+        form: function () {  //表单验证
+            $('body').on('change','.form .row input',function () {
+                $('.debug').html($('.form .row input').val());
             })
         },
         share: function () {  //显示隐藏右上角分享提示
