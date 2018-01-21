@@ -98,7 +98,7 @@
             })
             $('body').on('click','#submit',function () {  //点击提交按钮
                 var flag = 1;  //判断表单是否都通过验证的标记参数
-                $('.form-1 input').each(function () {
+                $('.form-2 input').each(function () {
                     if ($(this).val() == '') {
                         flag = 0;
                     }
