@@ -19,6 +19,11 @@ body {
     background: #fff;
     font-size: 0.16rem;
 }
+input, textarea {
+    -moz-user-select: auto;
+    -webkit-user-select: auto;
+    user-select: auto;
+}
 .swiper-container {
     width: 100%;
     height: 100%;
