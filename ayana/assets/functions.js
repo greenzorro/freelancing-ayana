@@ -83,8 +83,8 @@
             })
         },
         form: function () {  //表单验证
-            $('body').on('change','.form .row input',function () {
-                $('.debug').html($('.form .row input').val());
+            $('body').on('change','.row input',function () {
+                $('.debug .display').html($(this).val());
             })
         },
         share: function () {  //显示隐藏右上角分享提示

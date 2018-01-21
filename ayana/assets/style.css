@@ -38,6 +38,22 @@ body {
 
 
 
+/*debug*/
+.debug {
+    position: fixed;
+    right: 0;
+    bottom: 30%;
+    z-index: 999;
+}
+.debug .row input {
+    display: block;
+    padding: 0.02rem;
+    border: 0.01rem solid #eee;
+}
+
+
+
+
 /*quiz*/
 .quiz_item_selected {
     color: red;
