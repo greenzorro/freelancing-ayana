@@ -47,16 +47,6 @@
                 mySwiper.slideTo(6, 300, true);
                 mySwiper.lockSwipeToNext();
             })
-            $('body').on('click','#next',function () {  //点击继续按钮
-                mySwiper.unlockSwipeToNext();
-                mySwiper.slideNext(true, 300);
-                mySwiper.lockSwipeToNext();
-            })
-            $('body').on('click','#submit',function () {  //点击提交按钮
-                mySwiper.unlockSwipeToNext();
-                mySwiper.slideNext(true, 300);
-                mySwiper.lockSwipeToNext();
-            })
         }
     }
 
@@ -83,8 +73,41 @@
             })
         },
         form: function () {  //表单验证
-            $('body').on('change','.row input',function () {
-                $('.debug .display').html($(this).val());
+            $('body').on('blur','.form input',function () {  //输入框失去焦点时进行非空校验
+                if ($(this).val() == '') {
+                    $(this).parent().find('.error').html('这项还没有填哦~');
+                    $(this).parent().find('.error').show();
+                }
+                else {
+                    $(this).parent().find('.error').hide();
+                    $(this).parent().find('.error').html('');
+                }
+            })
+            $('body').on('click','#next',function () {  //点击继续按钮
+                var flag = 1;  //判断表单是否都通过验证的标记参数
+                $('.form-1 input').each(function () {
+                    if ($(this).val() == '') {
+                        flag = 0;
+                    }
+                })
+                if (flag) {  //表单都通过验证才进入下一页
+                    mySwiper.unlockSwipeToNext();
+                    mySwiper.slideNext(true, 300);
+                    mySwiper.lockSwipeToNext();
+                }
+            })
+            $('body').on('click','#submit',function () {  //点击提交按钮
+                var flag = 1;  //判断表单是否都通过验证的标记参数
+                $('.form-1 input').each(function () {
+                    if ($(this).val() == '') {
+                        flag = 0;
+                    }
+                })
+                if (flag) {  //表单都通过验证才进入下一页
+                    mySwiper.unlockSwipeToNext();
+                    mySwiper.slideNext(true, 300);
+                    mySwiper.lockSwipeToNext();
+                }
             })
         },
         share: function () {  //显示隐藏右上角分享提示

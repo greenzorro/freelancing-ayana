@@ -35,20 +35,8 @@ body {
     padding: 0.02rem;
     border: 0.01rem solid #eee;
 }
-
-
-
-/*debug*/
-.debug {
-    position: absolute;
-    right: 0;
-    bottom: 30%;
-    z-index: 999;
-}
-.debug .row input {
-    display: block;
-    padding: 0.02rem;
-    border: 0.01rem solid #eee;
+.form .row .error {
+    display: none;
 }
 
 
