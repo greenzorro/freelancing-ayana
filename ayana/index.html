@@ -36,6 +36,7 @@
 	        	<a class="quiz_item" rel="0" href="javascript:;">单身汪</a>
 	        	<a class="quiz_item" rel="1" href="javascript:;">情侣汪</a>
 	        	<a class="quiz_item" rel="2" href="javascript:;">加班汪</a>
+	        	<a class="quiz_item" rel="3" href="javascript:;">亲子汪</a>
 	        </div>
 	        <!-- page end -->
 
@@ -44,90 +45,65 @@
 	        	<a class="quiz_item" rel="0" href="javascript:;">单身狗的狂欢party</a>
 	        	<a class="quiz_item" rel="1" href="javascript:;">情侣狗的订婚party</a>
 	        	<a class="quiz_item" rel="2" href="javascript:;">加班狗的Spa party</a>
+	        	<a class="quiz_item" rel="3" href="javascript:;">XXXXXXXXXXXXXXXX</a>
 	        </div>
 	        <!-- page end -->
 
 	        <!-- page begin -->
-	        <div class="swiper-slide result result-1 noSwipe">
-	        	结果1
-	        	<a class="order" href="javascript:;">立即预订</a>
+	        <div class="swiper-slide result noSwipe">
+	        	<div class="intro intro-1">结果1</div>
+	        	<div class="intro intro-2">结果2</div>
+	        	<div class="intro intro-3">结果3</div>
+	        	<div class="intro intro-4">结果4</div>
+	        	<a id="order" href="javascript:;">立即预订</a>
 	        </div>
 	        <!-- page end -->
 
 	        <!-- page begin -->
-	        <div class="swiper-slide result result-2 noSwipe">
-	        	结果2
-	        	<a class="order" href="javascript:;">立即预订</a>
-	        </div>
-	        <!-- page end -->
-
-	        <!-- page begin -->
-	        <div class="swiper-slide result result-3 noSwipe">
-	        	结果3
-	        	<a class="order" href="javascript:;">立即预订</a>
-	        </div>
-	        <!-- page end -->
-
-	        <!-- page begin -->
-	        <div class="swiper-slide form form-1 noSwipe">
-	        	<div class="row">
-	        		<label>同行的人</label>
-
-		        	<!-- 表单字段 -->
-		        	<input type="text" name="with">
-
-		        	<p class="error"></p>
-	        	</div>
-	        	<div class="row">
-	        		<label>感兴趣的项目</label>
-
-		        	<!-- 表单字段 -->
-		        	<input type="text" name="enjoy">
-
-		        	<p class="error"></p>
-	        	</div>
-	        	<div class="row">
-	        		<label>旅行目的</label>
-
-		        	<!-- 表单字段 -->
-		        	<input type="text" name="goon">
-
-		        	<p class="error"></p>
-	        	</div>
-	        	<a id="next" href="javascript:;">继续</a>
-	        </div>
-	        <!-- page end -->
-
-	        <!-- page begin -->
-	        <div class="swiper-slide form form-2 noSwipe">
-	        	<div class="row">
-	        		<label>姓名</label>
-
-		        	<!-- 表单字段 -->
-		        	<input type="text" name="name">
-
-		        	<p class="error"></p>
-	        	</div>
-	        	<div class="row">
-	        		<label>邮箱</label>
-
-		        	<!-- 表单字段 -->
-		        	<input type="email" name="email">
-
-		        	<p class="error"></p>
-	        	</div>
-	        	<div class="row">
-	        		<label>手机号</label>
-
-		        	<!-- 表单字段 -->
-		        	<input type="tel" name="mobile">
-
-		        	<p class="error"></p>
-	        	</div>
-
-	        	<!-- 提交按钮 -->
-	        	<a id="submit" href="javascript:;">立即制定旅行计划</a>
-
+	        <div class="swiper-slide form noSwipe">
+	        	<!-- <form id="user_form" action="http://www.w3school.com.cn/demo/demo_form.asp" method="post"> -->
+	        	<!-- <form id="user_form">
+	        		<input id="choices" type="hidden" name="choices">
+		        	<div class="row">
+		        		<label>你是什么类型的游客？</label>
+			        	<input class="input" type="text" name="user_type" placeholder="蜜月情侣、家庭出游、朋友出游">
+			        	<p class="error"></p>
+		        	</div>
+		        	<div class="row">
+		        		<label>旅行的时候对什么最感兴趣？</label>
+			        	<input class="input" type="text" name="user_interest" placeholder="美食、当地文化、Spa等">
+			        	<p class="error"></p>
+		        	</div>
+		        	<div class="row">
+		        		<label>姓名</label>
+			        	<input class="input" type="text" name="user_name" placeholder="您的姓名">
+			        	<p class="error"></p>
+		        	</div>
+		        	<div class="row">
+		        		<label>邮箱</label>
+			        	<input class="input" type="email" name="user_email" placeholder="您的email">
+			        	<p class="error"></p>
+		        	</div>
+		        	<div class="row">
+		        		<label>手机号</label>
+			        	<input class="input" type="tel" name="user_phone" placeholder="您的手机号">
+			        	<p class="error"></p>
+		        	</div>
+		        	<a id="submit" href="javascript:;">立即制定旅行计划</a>
+	        	</form> -->
+	        	<form id="user_form">
+		        	<div class="row">
+		        		<label>firstname</label>
+			        	<input class="input" type="text" name="firstname" value="Cola">
+			        	<p class="error"></p>
+		        	</div>
+		        	<div class="row">
+		        		<label>lastname</label>
+			        	<input class="input" type="text" name="lastname" value="Chan">
+			        	<p class="error"></p>
+		        	</div>
+		        	<a id="submit" href="javascript:;">submit</a>
+	        	</form>
 	        </div>
 	        <!-- page end -->
 
@@ -151,18 +127,6 @@
 	<script type="text/javascript" src="assets/zepto.min.js"></script>
 	<script type="text/javascript" src="assets/swiper.jquery.min.js"></script>
 	<script type="text/javascript" src="assets/functions.js"></script>
-
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-28088765-2', 'auto');
-	  ga('send', 'pageview');
-
-	</script>
-
 
 	</body>
 </html>

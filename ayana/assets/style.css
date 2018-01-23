@@ -31,6 +31,20 @@ input, textarea {
 
 
 
+/*quiz*/
+.quiz_item_selected {
+    color: red;
+}
+
+
+
+/*result*/
+.result .intro {
+    display: none;
+}
+
+
+
 /*form*/
 .form .row label {
     display: block;
@@ -42,14 +56,6 @@ input, textarea {
 }
 .form .row .error {
     display: none;
-}
-
-
-
-
-/*quiz*/
-.quiz_item_selected {
-    color: red;
 }
 
 
