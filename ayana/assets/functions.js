@@ -3,6 +3,7 @@
     var pageFunc, plugin,
         mySwiper,
         score=[], total;
+    document.addEventListener("touchstart", function(){}, true);
 
     document.onreadystatechange = function () {
         if (document.readyState == "complete" ) {  //页面加载完成，执行相应代码
