@@ -80,22 +80,7 @@
                 })
                 if (flag) {  //表单都通过验证才进入下一页
                     // $('#user_form').submit();
-                    var params = $("#user_form").serialize();
-                    console.log(params);  //debug
-                    $.ajax({
-                        type : "POST",
-                        url : "http://www.w3school.com.cn/demo/demo_form.asp",  //此处填写表单提交的地址
-                        data : params,
-                        success : function(msg) {
-                            mySwiper.unlockSwipeToNext();
-                            mySwiper.slideNext(true, 300);
-                            mySwiper.lockSwipeToNext();
-                        },
-                        error : function(msg) {
-                            alert("提交失败，请再试试吧");
-                            console.log(msg);  //debug
-                        }
-                    });
+                    ajaxSubmit($("#user_form"),'http://www.w3school.com.cn/demo/demo_form.asp','POST')
                 }
             })
             function emptyOrNot(obj) {  //判断某个输入框是否为空，并显示错误提示
@@ -107,6 +92,24 @@
                     obj.parent().find('.error').hide();
                     obj.parent().find('.error').html('');
                 }
+            }
+            function ajaxSubmit(formObj,url,method) {  //ajax提交数据
+                var params = formObj.serialize();
+                console.log(params);  //debug
+                $.ajax({
+                    type : method,
+                    url : url,
+                    data : params,
+                    success : function() {
+                        mySwiper.unlockSwipeToNext();
+                        mySwiper.slideNext(true, 300);
+                        mySwiper.lockSwipeToNext();
+                    },
+                    error : function(msg) {
+                        alert("提交失败，请再试试吧");
+                        console.log(msg);  //debug
+                    }
+                });
             }
         },
         share: function () {  //显示隐藏右上角分享提示
