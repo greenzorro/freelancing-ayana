@@ -81,7 +81,7 @@
                 })
                 if (flag) {  //表单都通过验证才进入下一页
                     // $('#user_form').submit();
-                    ajaxSubmit($("#user_form"),'http://www.w3school.com.cn/demo/demo_form.asp','POST')
+                    ajaxSubmit($("#user_form"),'http://device.ivy4u.com/r','POST')
                 }
             })
             function emptyOrNot(obj) {  //判断某个输入框是否为空，并显示错误提示
