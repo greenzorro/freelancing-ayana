@@ -43,7 +43,7 @@
                 mySwiper.slideNext(true, 300);
                 mySwiper.lockSwipeToNext();
             })
-            $('body').on('click','#order',function () {  //点击立即预订按钮
+            $('body').on('click','#order',function () {  //点击立即定制旅行计划按钮
                 mySwiper.unlockSwipeToNext();
                 mySwiper.slideNext(true, 300);
                 mySwiper.lockSwipeToNext();
@@ -101,7 +101,8 @@
                     type : method,
                     url : url,
                     data : params,
-                    success : function() {
+                    success : function(msg) {
+                        console.log(msg);  //debug
                         mySwiper.unlockSwipeToNext();
                         mySwiper.slideNext(true, 300);
                         mySwiper.lockSwipeToNext();
