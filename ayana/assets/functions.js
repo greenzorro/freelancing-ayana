@@ -80,7 +80,6 @@
                     emptyOrNot($(this));
                 })
                 if (flag) {  //表单都通过验证才进入下一页
-                    // $('#user_form').submit();
                     ajaxSubmit($("#user_form"),'http://device.ivy4u.com/r','POST')
                 }
             })
@@ -108,8 +107,8 @@
                         mySwiper.lockSwipeToNext();
                     },
                     error : function(msg) {
-                        alert("提交失败，请再试试吧");
                         console.log(msg);  //debug
+                        alert("提交失败，请再试试吧");
                     }
                 });
             }
