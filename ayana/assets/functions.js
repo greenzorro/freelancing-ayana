@@ -55,6 +55,7 @@
         quiz: function () {
             $('.quiz_item').click(function () {  //点击题目选项
                 score[mySwiper.activeIndex-1] = $(this).attr('rel');  //记录选项分数
+                console.log("choice: " + score[mySwiper.activeIndex-1]);  //debug
                 $('.quiz-' + mySwiper.activeIndex + " .quiz_item").removeClass('quiz_item_selected');
                 $(this).addClass('quiz_item_selected');
                 if (mySwiper.activeIndex == $('.quiz').length) {  //最后一题
@@ -101,20 +102,20 @@
                     url : url,
                     data : params,
                     success : function(msg) {
-                        console.log(msg);  //debug
+                        console.log("server msg: " + msg);  //debug
                         mySwiper.unlockSwipeToNext();
                         mySwiper.slideNext(true, 300);
                         mySwiper.lockSwipeToNext();
                     },
                     error : function(msg) {
-                        console.log(msg);  //debug
+                        console.log("server msg: " + msg);  //debug
                         alert("提交失败，请再试试吧");
                     }
                 });
             }
         },
         share: function () {  //显示隐藏右上角分享提示
-            $('body').on('click','.share',function () {
+            $('body').on('click','#share',function () {
                 $('.share_mask').addClass('share_mask_on');
             })
             $('body').on('click','.share_mask',function () {
