@@ -38,6 +38,32 @@ a:active {
 
 
 
+/*button*/
+.btn_wrap {
+    text-align: center;
+}
+.btn {
+    display: inline-block;
+    height: 0.44rem;
+    padding: 0 0.3rem;
+    border-radius: 2rem;
+    background: #F6CC7F;
+}
+.btn span {
+    float: left;
+    line-height: 0.44rem;
+    padding-right: 0.15rem;
+    font-size: 0.17rem;
+    color: #87471d;
+}
+.btn img {
+    float: left;
+    width: 0.17rem;
+    padding-top: 0.13rem;
+}
+
+
+
 /*quiz*/
 .quiz_item_selected {
     color: red;
