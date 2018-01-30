@@ -254,6 +254,9 @@ a:active {
     z-index: 99;
     transition: opacity 0.3s linear;
 }
+.share_mask:active {
+    transform: scale(1);
+}
 .share_mask_on {
     right: 0;
     bottom: 0;
