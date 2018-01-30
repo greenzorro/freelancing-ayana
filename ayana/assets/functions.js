@@ -122,6 +122,7 @@
                 $('.share_mask').addClass('share_mask_on');
             })
             $('body').on('click','.share_mask',function () {
+                alert("test");
                 $('.share_mask').removeClass('share_mask_on');
             })
         }
