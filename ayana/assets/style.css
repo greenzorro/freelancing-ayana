@@ -244,6 +244,7 @@ a:active {
 
 /*share*/
 .share_mask {
+    display: block;
     background: rgba(0,0,0,0.6) url(../images/share.png) no-repeat right top;
     background-size: 1.53rem 1.3rem;
     opacity: 0;
