@@ -244,9 +244,6 @@ a:active {
 
 /*share*/
 .share_mask {
-    width: 0;
-    height: 0;
-    overflow: hidden;
     background: rgba(0,0,0,0.6) url(../images/share.png) no-repeat right top;
     background-size: 1.53rem 1.3rem;
     opacity: 0;
@@ -257,10 +254,11 @@ a:active {
     transition: opacity 0.3s linear;
 }
 .share_mask_on {
-    width: 100vw;
-    height: 100vh;
+    right: 0;
+    bottom: 0;
     opacity: 1;
 }
+
 
 
 
