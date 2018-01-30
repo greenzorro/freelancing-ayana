@@ -73,16 +73,19 @@
                 emptyOrNot($(this));
             })
             $('body').on('click','#submit',function () {  //点击提交按钮
-                var flag = 1;  //判断表单是否都通过验证的标记参数
-                $('.form .input').each(function () {
-                    if ($(this).val() == '') {
-                        flag = 0;
-                    }
-                    emptyOrNot($(this));
-                })
-                if (flag) {  //表单都通过验证才进入下一页
-                    ajaxSubmit($("#user_form"),'http://device.ivy4u.com/r','POST')
-                }
+                        mySwiper.unlockSwipeToNext();
+                        mySwiper.slideNext(true, 300);
+                        mySwiper.lockSwipeToNext();
+                // var flag = 1;  //判断表单是否都通过验证的标记参数
+                // $('.form .input').each(function () {
+                //     if ($(this).val() == '') {
+                //         flag = 0;
+                //     }
+                //     emptyOrNot($(this));
+                // })
+                // if (flag) {  //表单都通过验证才进入下一页
+                //     ajaxSubmit($("#user_form"),'http://device.ivy4u.com/r','POST')
+                // }
             })
             function emptyOrNot(obj) {  //判断某个输入框是否为空，并显示错误提示
                 if (obj.val() == '') {
