@@ -26,11 +26,21 @@ input, textarea {
 
 
 /*table*/
+hgroup {
+    width: 12rem;
+    margin: 0 auto;
+    position: relative;
+}
 h1 {
     margin: 0.5rem 0 0.2rem;
     font-size: 0.24rem;
     font-weight: bold;
     text-align: center;
+}
+button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 table {
     width: 12rem;
